@@ -8,7 +8,20 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
+  const scrolltoservice=()=>{
+  
+    const about = document.getElementById('service');
+    if (about) {
+      about.scrollIntoView({ behavior: 'smooth' });
+    }
+  } 
+   const scrolltosFAQ=()=>{
+  
+    const faq = document.getElementById('faq');
+    if (faq) {
+      faq.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   return (
     <nav className="relative glass rounded-xl shadow w-full lg:w-fit ">
       <div className="container px-6 py-4 mx-auto gap-24 md:flex md:justify-between md:items-center">
@@ -74,7 +87,7 @@ const Navbar = () => {
                 Home
               </Link>
             </div>
-            <div className="flex flex-col h-6 px-2">
+            <div onClick={scrolltoservice} className="flex flex-col h-6 px-2">
               <Dropdown />
             </div>
             <div className="flex flex-col h-6 trans px-2 overflow-hidden">
@@ -93,7 +106,7 @@ const Navbar = () => {
                 Reviews
               </Link>
             </div>
-            <div className="flex flex-col h-6 trans px-2 overflow-hidden">
+            <div onClick={scrolltosFAQ} className="flex flex-col h-6 trans px-2 overflow-hidden">
               <Link className="duration-300" to="/">
                 FAQs
               </Link>

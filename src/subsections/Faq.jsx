@@ -1,6 +1,6 @@
 const Faq = () => {
   return (
-    <section className="bg-white lg:px-24  :bg-gray-900">
+    <section id="faq" className="bg-white lg:px-24  :bg-gray-900">
       <div className="container px-6 pt-12 pb-4 mx-auto">
         <h1 className="text-2xl text-gray-800 lg:text-4xl font-semibold text-center  :text-white">
           Frequently asked questions.

@@ -19,14 +19,14 @@
 }
 
 .chatbtn {
-  background-color: #fff;
+  background-color: #a855f7;
   border: 2px solid #a855f7;
   position: relative;
   width: 6.2em;
   height: 2em;
   transition: 0.5s;
   font-size: 17px;
-  border-radius: 0.4em;
+  border-radius: 17px;
 }
 
 .chatbtn p {
@@ -36,7 +36,7 @@
   margin: 0;
   padding: 0;
   transition: 0.5s;
-  color: #a855f7;
+  color: #ffffff;
 }
 
 .chatbtn svg {
@@ -59,9 +59,3 @@
 .chatbtn:hover svg {
   opacity: 1;
 }
-
-.chatbtn:hover {
-  background-color: #a855f7;
-}
-
-

@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 const HorizontalScroll = () => {
   return (
-    <div className="p-2">
+    <div id="service" className="p-2">
       <h1 className="text-3xl translate-y-24 lg:text-4xl font-semibold text-center">
         Our Services
       </h1>

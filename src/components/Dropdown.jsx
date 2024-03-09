@@ -7,19 +7,15 @@ const Dropdown = () => {
     <div className="z-50">
       <FlyoutLink href="#" FlyoutContent={PricingContent}>
         <div className="flex cursor-pointer flex-col h-6 trans lg:px-2 px-0 md:px-0 overflow-hidden">
-          <h1 className="duration-300 text-black" >
-            Services
-          </h1>
-          <h1 className="duration-300   text-purple-500">
-            Services
-          </h1>
+          <h1 className="duration-300 text-black">Services</h1>
+          <h1 className="duration-300   text-purple-500">Services</h1>
         </div>
       </FlyoutLink>
     </div>
   );
 };
 
-const FlyoutLink = ({ children,  FlyoutContent }) => {
+const FlyoutLink = ({ children, FlyoutContent }) => {
   const [open, setOpen] = useState(false);
 
   const showFlyout = FlyoutContent && open;
@@ -30,9 +26,7 @@ const FlyoutLink = ({ children,  FlyoutContent }) => {
       onMouseLeave={() => setOpen(false)}
       className="relative w-fit h-fit"
     >
-      <h1 className="relative text-white">
-        {children}
-      </h1>
+      <h1 className="relative text-white">{children}</h1>
       <AnimatePresence>
         {showFlyout && (
           <motion.div
