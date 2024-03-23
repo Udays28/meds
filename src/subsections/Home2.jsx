@@ -10,7 +10,7 @@ const Home2 = () => {
   };
 
   return (
-    <section className="bg-white flex justify-center items-center h-full lg:h-screen :bg-gray-900">
+    <section className="glassback flex justify-center items-center h-full lg:h-screen :bg-gray-900">
       <div className="container px-6 py-10 mx-auto">
         <div className="lg:-mx-6 lg:flex  lg:flex-row-reverse lg:px-12 lg:items-center">
           <img

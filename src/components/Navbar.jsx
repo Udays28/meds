@@ -8,20 +8,18 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const scrolltoservice=()=>{
-  
-    const about = document.getElementById('service');
+  const scrolltoservice = () => {
+    const about = document.getElementById("service");
     if (about) {
-      about.scrollIntoView({ behavior: 'smooth' });
+      about.scrollIntoView({ behavior: "smooth" });
     }
-  } 
-   const scrolltosFAQ=()=>{
-  
-    const faq = document.getElementById('faq');
+  };
+  const scrolltosFAQ = () => {
+    const faq = document.getElementById("faq");
     if (faq) {
-      faq.scrollIntoView({ behavior: 'smooth' });
+      faq.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
   return (
     <nav className="relative glass rounded-xl shadow w-full lg:w-fit ">
       <div className="container px-6 py-4 mx-auto gap-24 md:flex md:justify-between md:items-center">
@@ -91,10 +89,10 @@ const Navbar = () => {
               <Dropdown />
             </div>
             <div className="flex flex-col h-6 trans px-2 overflow-hidden">
-              <Link className="duration-300" to="/">
+              <Link className="duration-300" to="/all-clients">
                 Clients
               </Link>
-              <Link className="duration-300   text-purple-500" to="/">
+              <Link className="duration-300   text-purple-500" to="/all-clients">
                 Clients
               </Link>
             </div>
@@ -106,7 +104,10 @@ const Navbar = () => {
                 Reviews
               </Link>
             </div>
-            <div onClick={scrolltosFAQ} className="flex flex-col h-6 trans px-2 overflow-hidden">
+            <div
+              onClick={scrolltosFAQ}
+              className="flex flex-col h-6 trans px-2 overflow-hidden"
+            >
               <Link className="duration-300" to="/">
                 FAQs
               </Link>
@@ -115,10 +116,10 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="flex flex-col h-6 trans px-2 overflow-hidden">
-              <Link className="duration-300" to="/">
+              <Link className="duration-300" to="/about">
                 About
               </Link>
-              <Link className="duration-300   text-purple-500" to="/">
+              <Link className="duration-300   text-purple-500" to="/about">
                 About
               </Link>
             </div>

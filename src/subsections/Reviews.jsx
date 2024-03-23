@@ -22,7 +22,7 @@ const Reviews = () => {
         Reviews From Recent Clients
       </h1>
 
-      <section className=" items-center lg:py-12 lg:flex lg:justify-center">
+      <section className=" items-center lg:py-12 px-3 lg:flex lg:justify-center">
         <div className="overflow-hidden bg-white  lg:mx-8 lg:flex lg:max-w-6xl lg:w-full lg:shadow-md lg:rounded-xl">
           <div className="lg:w-1/2">
             <video className="h-full w-full" controls>
@@ -51,7 +51,7 @@ const Reviews = () => {
           </div>
         </div>
       </section>
-      <section className=" items-center lg:py-12 lg:flex lg:justify-center">
+      <section className=" items-center px-3 lg:py-12 lg:flex lg:justify-center">
         <div className="overflow-hidden flex-row-reverse bg-white  lg:mx-8 lg:flex lg:max-w-6xl lg:w-full lg:shadow-md lg:rounded-xl">
           <div className="lg:w-1/2">
             <video className="h-full w-full" controls>
@@ -80,7 +80,7 @@ const Reviews = () => {
           </div>
         </div>
       </section>
-      <section className=" items-center lg:py-12 lg:flex lg:justify-center">
+      <section className=" items-center px-3 lg:py-12 lg:flex lg:justify-center">
         <div className="overflow-hidden bg-white  lg:mx-8 lg:flex lg:max-w-6xl lg:w-full lg:shadow-md lg:rounded-xl">
           <div className="lg:w-1/2">
             <video className="h-full w-full" controls>
