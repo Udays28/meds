@@ -2,10 +2,12 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
 import Message from "./pages/Message";
-import Footer from "./components/Footer";
 import AboutPage from "./pages/AboutPage";
 import ClientsPage from "./pages/ClientsPage";
 import ScrollToTop from "./components/ScrollToTop";
+import ServicesForm from "./pages/ServicesForm";
+import Blog from "./pages/Blog";
+import Reviews from "./pages/Reviews";
 
 function App() {
   return (
@@ -19,11 +21,14 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/message" element={<Message />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/reviews" element={<Reviews />} />
           <Route path="/all-clients" element={<ClientsPage />} />
+          <Route path="/services-form" element={<ServicesForm />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </div>
 
-      <Footer/>
+     
     </>
   );
 }

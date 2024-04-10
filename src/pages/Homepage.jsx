@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 // import Domains from "../subsections/Domains";
-import HorizontalScroll from "../subsections/HorizontalScroll";
 import Reviews from "../subsections/Reviews";
 import Faq from "../subsections/Faq";
 import Companies from "../subsections/Companies";
 import Unique from "../subsections/Unique";
 import Home2 from "../subsections/Home2";
+import Services from "../subsections/Services";
+import Footer from "../components/Footer";
 
 const Homepage = () => {
   return (
@@ -38,7 +39,7 @@ const Homepage = () => {
             <p className="my-12">
               Our Performance Marketing Services are Certified by
             </p>
-            <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3 lg:gap-8">
               <div className="h-32 rounded-lg bg-gray-200"></div>
               <div className="h-32 rounded-lg bg-gray-200"></div>
               <div className="h-32 rounded-lg bg-gray-200"></div>
@@ -47,12 +48,12 @@ const Homepage = () => {
         </div>
 
         {/* <Domains /> */}
-
-        <HorizontalScroll />
+        <Services />
         <Reviews />
         <Unique />
         <Faq />
         <Companies />
+        <Footer/>
       </section>
     </>
   );
