@@ -34,12 +34,12 @@ const Home2 = () => {
             <div className="flex gap-4">
               <button
                 onClick={scrolltoabout}
-                className="px-4 py-2 lg:text-md text-sm text-white bg-purple-500 my-5 rounded-full"
+                className="px-4 py-2 lg:text-md text-sm text-white bg-purple-500 hover:bg-purple-700 duration-200 hover:shadow-xl my-5 rounded-full"
               >
                 Explore Services
               </button>
-              <Link to="/message">
-                <button className="px-4 py-2 lg:text-md text-sm bg-black text-white my-5 rounded-full">
+              <Link to="/services-form">
+                <button className="px-4 py-2 lg:text-md text-sm bg-black hover:bg-zinc-800 hover:shadow-xl text-white my-5 rounded-full">
                   Book a Strategy Call
                 </button>
               </Link>

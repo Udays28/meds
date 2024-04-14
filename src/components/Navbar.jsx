@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Dropdown from "./Dropdown";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

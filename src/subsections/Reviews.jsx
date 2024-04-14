@@ -1,128 +1,79 @@
+import { useState } from "react";
+
+/* eslint-disable react/no-unescaped-entities */
 const Reviews = () => {
-  const hoverVideo = (e) => {
-    e.currentTarget.querySelector("video").play();
-  };
-
-  const hideVideo = (e) => {
-    e.currentTarget.querySelector("video").pause();
-  };
-
+  const [videos, setVideos] = useState([
+    {
+      source:
+        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      name: "Aryan Tyagi",
+      description:
+        "  Some quick example text to build on the card title and make up the bulk of the card's content.",
+    },
+    {
+      source:
+        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      name: "Aryan Tyagi",
+      description:
+        "  Some quick example text to build on the card title and make up the bulk of the card's content.",
+    },
+    {
+      source:
+        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      name: "Aryan Tyagi",
+      description:
+        "  Some quick example text to build on the card title and make up the bulk of the card's content.",
+    },
+    {
+      source:
+        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      name: "Aryan Tyagi",
+      description:
+        "  Some quick example text to build on the card title and make up the bulk of the card's content.",
+    },
+    {
+      source:
+        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      name: "Aryan Tyagi",
+      description:
+        "  Some quick example text to build on the card title and make up the bulk of the card's content.",
+    },
+    {
+      source:
+        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      name: "Aryan Tyagi",
+      description:
+        "  Some quick example text to build on the card title and make up the bulk of the card's content.",
+    },
+  ]);
   return (
-    <div
-      id="featuredwork"
-      className="relative my-24 px-24 p-4 flex min-h-screen flex-col "
-    >
-      <div className="min-h-28">
-        <div className="mx-auto py-4">
-          <h1 className="text-center text-5xl font-semibold">
-            Video Reviews From Clients
-          </h1>
-          <div className="gap-6 mt-8 mx-4 md:flex">
-            <div className="md:w-1/2 z-10 relative">
-              <div
-                className="wrap-video"
-                onMouseEnter={hoverVideo}
-                onMouseLeave={hideVideo}
+    <div className="relative my-24 lg:px-24 p-4 flex min-h-screen flex-col lg:flex-row flex-wrap gap-16 justify-center ">
+      {videos.map((video, index) => (
+        <div key={index} className="flex justify-center">
+          <div className="rounded-lg shadow-lg bg-white max-w-sm">
+            <div>
+              <video
+                width={320}
+                height={240}
+                controls
+                className="w-full rounded-t-lg"
               >
-                <video className="object-cover h-96 w-full bg-black" loop>
-                  <source
-                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/648b6bdb802c1efb403e5be5_ZOOM2-transcode.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
-              <span className="pt-4 grid grid-cols-6 gap-4">
-                <span className="col-start-1 col-end-3 font-bold text-lg text-black uppercase font-mono">
-                  bodega x new balance
-                </span>
-                <span className="col-end-7 col-span-2 text-sm text-slate-800 uppercase font-mono flex justify-end">
-                  <span className="">fashion/retail</span>
-                </span>
-              </span>
-              <span className="block text-slate-700 text-xs uppercase font-mono">
-                the trail less taken
-              </span>
+                <source src={video.source} type="video/mp4" />
+                <source src="movie.ogg" type="video/ogg" />
+                Your browser does not support the video tag.
+              </video>
             </div>
-            <div className="md:w-1/2 z-10 relative">
-              <div
-                className="wrap-video"
-                onMouseEnter={hoverVideo}
-                onMouseLeave={hideVideo}
-              >
-                <video className="object-cover h-96 w-full bg-black" loop>
-                  <source
-                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/648b6bdb802c1efb403e5be5_ZOOM2-transcode.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
-              <span className="pt-4 grid grid-cols-6 gap-4">
-                <span className="col-start-1 col-end-3 font-bold text-lg text-black uppercase font-mono">
-                  bodega x new balance
-                </span>
-                <span className="col-end-7 col-span-2 text-sm text-slate-800 uppercase font-mono flex justify-end">
-                  <span className="">fashion/retail</span>
-                </span>
-              </span>
-              <span className="block text-slate-700 text-xs uppercase font-mono">
-                the trail less taken
-              </span>
-            </div>
-          </div>
-          <div className="gap-6 mt-8 mx-4 md:flex">
-            <div className="md:w-1/2 z-10 relative">
-              <div
-                className="wrap-video"
-                onMouseEnter={hoverVideo}
-                onMouseLeave={hideVideo}
-              >
-                <video className="object-cover h-96 w-full bg-black" loop>
-                  <source
-                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/648b6bdb802c1efb403e5be5_ZOOM2-transcode.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
-              <span className="pt-4 grid grid-cols-6 gap-4">
-                <span className="col-start-1 col-end-3 font-bold text-lg text-black uppercase font-mono">
-                  bodega x new balance
-                </span>
-                <span className="col-end-7 col-span-2 text-sm text-slate-800 uppercase font-mono flex justify-end">
-                  <span className="">fashion/retail</span>
-                </span>
-              </span>
-              <span className="block text-slate-700 text-xs uppercase font-mono">
-                the trail less taken
-              </span>
-            </div>
-            <div className="md:w-1/2 z-10 relative">
-              <div
-                className="wrap-video"
-                onMouseEnter={hoverVideo}
-                onMouseLeave={hideVideo}
-              >
-                <video className="object-cover h-96 w-full bg-black" loop>
-                  <source
-                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/648b6bdb802c1efb403e5be5_ZOOM2-transcode.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
-              <span className="pt-4 grid grid-cols-6 gap-4">
-                <span className="col-start-1 col-end-3 font-bold text-lg text-black uppercase font-mono">
-                  bodega x new balance
-                </span>
-                <span className="col-end-7 col-span-2 text-sm text-slate-800 uppercase font-mono flex justify-end">
-                  <span className="">fashion/retail</span>
-                </span>
-              </span>
-              <span className="block text-slate-700 text-xs uppercase font-mono">
-                the trail less taken
-              </span>
+            <div className="p-6">
+              <h5 className="text-gray-900 text-xl font-medium mb-2">
+                {video.name}
+              </h5>
+              <p className="text-gray-700 text-base mb-4">
+                {video.description}
+              </p>
             </div>
           </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 };

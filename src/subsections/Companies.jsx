@@ -11,21 +11,7 @@ const Comapnies = () => {
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
               similique obcaecati illum mollitia.
             </p>
-            <div className="w-full max-w-sm mx-auto mt-6 bg-transparent border rounded-md   :border-gray-700 focus-within:border-purple-400 focus-within:ring focus-within:ring-purple-300   :focus-within:border-purple-300 focus-within:ring-opacity-40">
-              <form className="flex flex-col md:flex-row">
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  className="flex-1 h-10 px-4 py-2 m-1 text-gray-700 placeholder-gray-400 bg-transparent border-none appearance-none   :text-gray-200 focus:outline-none focus:placeholder-transparent focus:ring-0"
-                />
-                <button
-                  type="button"
-                  className="h-10 px-4 py-2 m-1 text-white transition-colors duration-300 transform bg-purple-500 rounded-md hover:bg-purple-400 focus:outline-none focus:bg-purple-400"
-                >
-                  Join Us
-                </button>
-              </form>
-            </div>
+            
           </div>
           <div className="max-w-screen-xl mx-auto mt-20">
             <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
