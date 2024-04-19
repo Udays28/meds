@@ -33,7 +33,7 @@ const Navbar = () => {
     setTimeout(scrolltoservice, 500); // Adjust the timeout as needed
   };
   return (
-    <nav className="relative glass rounded-xl shadow w-full lg:w-full lg:mx-28 ">
+    <nav className="relative glass rounded-xl shadow w-full lg:w-fit lg:mx-28 ">
       <div className="container px-6 py-4 mx-auto gap-24 md:flex md:justify-between md:items-center">
         <div className="flex items-center  justify-between">
           <div className="flex items-center gap-3 justify-between">
@@ -115,6 +115,16 @@ const Navbar = () => {
                 to="/all-clients"
               >
                 Clients
+              </Link>
+            </div>    <div className="flex flex-col h-6 trans px-2 overflow-hidden">
+              <Link className="duration-300" to="/all-clients">
+                Portfolio
+              </Link>
+              <Link
+                className="duration-300   text-purple-500"
+                to="/all-clients"
+              >
+                Portfolio
               </Link>
             </div>
             <div className="flex flex-col h-6 trans px-2 overflow-hidden">
