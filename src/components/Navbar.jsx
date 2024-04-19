@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate(); // Initialize useHistory hook
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -19,6 +20,17 @@ const Navbar = () => {
     if (faq) {
       faq.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const handleFAQClick = () => {
+    // Scroll to FAQ section after navigating to the home page
+    navigate('/');
+    setTimeout(scrolltosFAQ, 500); // Adjust the timeout as needed
+  }; 
+   const handleServiceClick = () => {
+    // Scroll to FAQ section after navigating to the home page
+    navigate('/');
+    setTimeout(scrolltoservice, 500); // Adjust the timeout as needed
   };
   return (
     <nav className="relative glass rounded-xl shadow w-full lg:w-full lg:mx-28 ">
@@ -85,7 +97,7 @@ const Navbar = () => {
                 Home
               </Link>
             </div> 
-            <div onClick={scrolltoservice} className="flex flex-col h-6 trans px-2 overflow-hidden">
+            <div onClick={handleServiceClick} className="flex flex-col h-6 trans px-2 overflow-hidden">
               <Link className="duration-300" to="/">
                 Services
               </Link>
@@ -121,7 +133,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div
-              onClick={scrolltosFAQ}
+              onClick={handleFAQClick}
               className="flex flex-col h-6 trans px-2 overflow-hidden"
             >
               <Link className="duration-300" to="/">

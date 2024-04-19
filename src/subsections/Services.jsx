@@ -124,8 +124,9 @@ const Services = () => {
   ]);
   return (
     <>
-      <h1 id="service" className="text-center my-6 text-5xl font-semibold">Services</h1>
-      
+      <h1 id="service" className="text-center my-6 text-5xl font-semibold">
+        Services
+      </h1>
 
       <div className="lg:px-28">
         <div className="container m-auto px-6 text-gray-500  xl:px-0">
@@ -136,18 +137,19 @@ const Services = () => {
                 className="break-inside shadow-xl hover:bg-gradient-to-bl hover:from-purple-700 hover:to-purple-900 hover:scale-95 duration-200 w-fit relative overflow-hidden flex flex-col justify-between space-y-2 text-sm rounded-xl p-4 mb-4 bg-gradient-to-tr from-purple-500 to-purple-700 text-white"
               >
                 <div className="flex flex-row items-center lg:space-x-3">
-             
-                  <span className="text-base m-0 font-medium">{service.name}</span>
+                  <span className="text-base m-0 font-medium">
+                    {service.name}
+                  </span>
                 </div>
                 <div className="flex justify-between items-center flex-wrap">
-                  <span className="text-xs my-2 lg:w-1/2">
+                  <span className="text-xs my-2 lg:w-7/12">
                     {service.description}
                   </span>
                   <Link to="/services-form">
-                  <button className="flex items-center hover:bg-black hover:text-white justify-center text-xs font-medium rounded-full px-3 py-1 space-x-1 bg-white text-black">
-                    <span>Next step</span>
-                    <IoArrowForward />
-                  </button>
+                    <button className="flex items-center hover:bg-black hover:text-white justify-center text-xs font-medium rounded-full px-3 py-1 space-x-1 bg-white text-black">
+                      <span>Next step</span>
+                      <IoArrowForward />
+                    </button>
                   </Link>
                 </div>
               </div>

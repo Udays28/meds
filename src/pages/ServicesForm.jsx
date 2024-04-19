@@ -132,7 +132,10 @@ const ServiceForm = () => {
         <main className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
           <div className="w-screen lg:px-16">
             <h1 className="lg:text-5xl text-4xl text-purple-500 font-semibold">
-              <span className="text-3xl text-black"> Boost Your Business: </span>
+              <span className="text-3xl text-black">
+                {" "}
+                Boost Your Business:{" "}
+              </span>
               <br /> Elevate Your Success Now!
             </h1>
             <form
@@ -304,7 +307,7 @@ const ServiceForm = () => {
               <div className="col-span-6">
                 <button
                   type="submit"
-                  className="inline-block shrink-0 rounded-md border border-purple-600 bg-purple-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-purple-600 focus:outline-none focus:ring active:text-purple-500"
+                  className="inline-block shrink-0 my-4 rounded-md border border-purple-600 bg-purple-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-purple-600 focus:outline-none focus:ring active:text-purple-500"
                 >
                   Submit Enquiry
                 </button>

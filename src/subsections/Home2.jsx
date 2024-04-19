@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Home2 = () => {
-  const scrolltoabout = () => {
+  const scrolltoservice = () => {
     const about = document.getElementById("service");
     if (about) {
       about.scrollIntoView({ behavior: "smooth" });
@@ -33,19 +33,19 @@ const Home2 = () => {
 
             <div className="flex gap-4">
               <button
-                onClick={scrolltoabout}
-                className="px-4 py-2 lg:text-md text-sm text-white bg-purple-500 hover:bg-purple-700 duration-200 hover:shadow-xl my-5 rounded-full"
+                onClick={scrolltoservice}
+                className="px-4 py-2 lg:text-md text-sm text-white bg-purple-500 hover:bg-white hover:text-purple-500 border hover:border-purple-500 duration-200 hover:shadow-xl my-5 rounded-full"
               >
                 Explore Services
               </button>
               <Link to="/services-form">
-                <button className="px-4 py-2 lg:text-md text-sm bg-black hover:bg-zinc-800 hover:shadow-xl text-white my-5 rounded-full">
+                <button className="px-4 py-2 lg:text-md text-sm bg-black hover:bg-white border hover:border-black hover:text-black hover:shadow-xl text-white my-5 rounded-full">
                   Book a Strategy Call
                 </button>
               </Link>
             </div>
             <div className="flex my-2 gap-4 items-center">
-              <h1 className=" text-2xl">Previous Work</h1>
+              <h1 className=" text-2xl">Portfolio</h1>
               <FaArrowRight className="text-2xl text-white bg-black p-1 rounded-full" />
             </div>
             <div className="h-52 rounded-xl w-full bg-gradient-to-r from-purple-400  to-purple-600">
