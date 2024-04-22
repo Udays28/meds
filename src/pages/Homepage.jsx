@@ -7,6 +7,7 @@ import Unique from "../subsections/Unique";
 import Home2 from "../subsections/Home2";
 import Services from "../subsections/Services";
 import Footer from "../components/Footer";
+import Gallery from "../subsections/Gallery";
 
 const Homepage = () => {
   return (
@@ -64,6 +65,7 @@ const Homepage = () => {
         {/* <Domains /> */}
         <Services />
         <Reviews />
+        <Gallery/>
         <Unique />
         <Faq />
         <Companies />

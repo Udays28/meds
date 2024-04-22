@@ -2,12 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Home2 = () => {
-  const scrolltoservice = () => {
-    const about = document.getElementById("service");
-    if (about) {
-      about.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+
 
   return (
     <section className=" flex justify-center lg:px-12 items-center h-full lg:h-full lg:pt-12">
@@ -32,18 +27,16 @@ const Home2 = () => {
             </p>
 
             <div className="flex gap-4">
-              <button
-                onClick={scrolltoservice}
-                className="px-4 py-2 lg:text-md text-sm text-white bg-purple-500 hover:bg-white hover:text-purple-500 border hover:border-purple-500 duration-200 hover:shadow-xl my-5 rounded-full"
-              >
-                Explore Services
-              </button>
+              
               <Link to="/services-form">
-                <button className="px-4 py-2 lg:text-md text-sm bg-black hover:bg-white border hover:border-black hover:text-black hover:shadow-xl text-white my-5 rounded-full">
+                <button className="px-6 py-2 lg:text-md text-sm text-white bg-purple-500 hover:bg-white hover:text-purple-500 border hover:border-purple-500 duration-200 hover:shadow-xl my-5 rounded-full">
                   Book a Strategy Call
                 </button>
               </Link>
             </div>
+            
+            <Link to="/portfolio">
+
             <div className="flex my-2 gap-4 items-center">
               <h1 className=" text-2xl">Portfolio</h1>
               <FaArrowRight className="text-2xl text-white bg-black p-1 rounded-full" />
@@ -53,8 +46,9 @@ const Home2 = () => {
                 className="object-cover object-center  w-full h-full rounded-xl"
                 src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
-              />
+                />
             </div>
+                </Link>
           </div>
         </div>
       </div>

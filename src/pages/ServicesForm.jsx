@@ -2,30 +2,39 @@ import { useState } from "react";
 import axios from "axios";
 
 const ServiceForm = () => {
+
   const services = [
-    "Logo Designing",
-    "3D Logo Designing",
-    "Facebook Ads",
-    "Google Ads",
-    "Social Media Marketing",
-    "Content Writing",
-    "Youtube Channel Management",
-    "Graphics Designing",
     "Website Development",
     "App Development",
     "SEO",
+    "E-Commerce Website",
+    "Facebook Ads",
+    "Social Media Marketing",
+    "Logo Designing",
+    "Funnel Creation",
+    "3D Logo Designing",
+    "Google Ads",
+    "landing Page creation",
+    "Content Writing",
+    "Youtube Channel Management",
+    "Graphics Designing",
     "E-Mail Marketing",
+    "Whatsapp Chat bot",
     "Whatsapp Automation",
+    "Lindekin Automation",
+    "Social Media Marketing automation",
     "Script Writing",
     "Lead Generation",
     "3D Animation",
     "2D Animation",
     "Reels Editing",
-    "5 Min Long Video",
+    "Video editing Services",
     "SMS Marketing",
     "Automated Calls",
-    "E-Commerce Website",
+    "Followups Auromation",
+    "Cold outreach outomations",
   ];
+  
 
   const [selectedServices, setSelectedServices] = useState([]);
   const [formData, setFormData] = useState({

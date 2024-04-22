@@ -21,13 +21,7 @@ const Reviews = () => {
       company: "Www.Bharosabank.com",
       project: "Www.bharosabank.com",
     },
-    {
-      name: "Chetan kumar jain",
-      review: "Good",
-      time: "2023/06/27",
-      company: "Bharosa bank",
-      project: "www.bharosabank.com",
-    },
+    
     {
       name: "Kanak",
       review: "Good photos and graphics keep it up",

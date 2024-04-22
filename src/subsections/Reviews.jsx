@@ -48,34 +48,39 @@ const Reviews = () => {
     },
   ]);
   return (
-    <div className="relative my-24 lg:px-24 p-4 flex min-h-screen flex-col lg:flex-row flex-wrap gap-16 justify-center ">
-      {videos.map((video, index) => (
-        <div key={index} className="flex justify-center">
-          <div className="rounded-lg shadow-lg bg-white max-w-sm">
-            <div>
-              <video
-                width={320}
-                height={240}
-                controls
-                className="w-full rounded-t-lg"
-              >
-                <source src={video.source} type="video/mp4" />
-                <source src="movie.ogg" type="video/ogg" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div className="p-6">
-              <h5 className="text-gray-900 text-xl font-medium mb-2">
-                {video.name}
-              </h5>
-              <p className="text-gray-700 text-base mb-4">
-                {video.description}
-              </p>
+    <>
+      <h1 className="text-center mt-24 text-5xl font-semibold">
+        Listen What our Clients Say
+      </h1>{" "}
+      <div className="relative lg:px-24 p-4 flex min-h-screen flex-col lg:flex-row flex-wrap gap-16 justify-center ">
+        {videos.map((video, index) => (
+          <div key={index} className="flex justify-center">
+            <div className="rounded-lg shadow-lg bg-white max-w-sm">
+              <div>
+                <video
+                  width={320}
+                  height={240}
+                  controls
+                  className="w-full rounded-t-lg"
+                >
+                  <source src={video.source} type="video/mp4" />
+                  <source src="movie.ogg" type="video/ogg" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="p-6">
+                <h5 className="text-gray-900 text-xl font-medium mb-2">
+                  {video.name}
+                </h5>
+                <p className="text-gray-700 text-base mb-4">
+                  {video.description}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 };
 

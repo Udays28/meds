@@ -25,12 +25,12 @@ const Navbar = () => {
   const handleFAQClick = () => {
     // Scroll to FAQ section after navigating to the home page
     navigate('/');
-    setTimeout(scrolltosFAQ, 500); // Adjust the timeout as needed
+    setTimeout(scrolltosFAQ, 100); // Adjust the timeout as needed
   }; 
    const handleServiceClick = () => {
     // Scroll to FAQ section after navigating to the home page
     navigate('/');
-    setTimeout(scrolltoservice, 500); // Adjust the timeout as needed
+    setTimeout(scrolltoservice, 100); // Adjust the timeout as needed
   };
   return (
     <nav className="relative glass rounded-xl shadow w-full lg:w-fit lg:mx-28 ">
@@ -117,12 +117,12 @@ const Navbar = () => {
                 Clients
               </Link>
             </div>    <div className="flex flex-col h-6 trans px-2 overflow-hidden">
-              <Link className="duration-300" to="/all-clients">
+              <Link className="duration-300" to="/portfolio">
                 Portfolio
               </Link>
               <Link
                 className="duration-300   text-purple-500"
-                to="/all-clients"
+                to="/portfolio"
               >
                 Portfolio
               </Link>

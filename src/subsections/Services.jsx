@@ -42,6 +42,10 @@ const Services = () => {
       description: "Designing high-quality logos for your brand.",
     },
     {
+      name: "Funnel Creation",
+      price: "3000 Rs",
+      description: "Creating 3D logos with unique designs.",
+    }, {
       name: "3D Logo Designing",
       price: "3000 Rs",
       description: "Creating 3D logos with unique designs.",
@@ -54,6 +58,10 @@ const Services = () => {
     },
 
     {
+      name: "landing Page creation",
+      price: "1000 Rs (Single Page)",
+      description: "Writing engaging content for your website or blog.",
+    },{
       name: "Content Writing",
       price: "1000 Rs (Single Page)",
       description: "Writing engaging content for your website or blog.",
@@ -75,9 +83,21 @@ const Services = () => {
       description: "Sending targeted email campaigns to your subscribers.",
     },
     {
+      name: "Whatsapp Chat bot",
+      price: "10000 Rs (Per Month)",
+      description: "Creating Chat Bots for whatsapp",
+    },  {
       name: "Whatsapp Automation",
       price: "10000 Rs (Per Month)",
       description: "Automating your WhatsApp marketing campaigns.",
+    },  {
+      name: "Lindekin Automation",
+      price: "10000 Rs (Per Month)",
+      description: "Automating your Lindekin marketing campaigns.",
+    }, {
+      name: "Social Media Marketing automation",
+      price: "10000 Rs (Per Month)",
+      description: "Automating your Social Media marketing campaigns.",
     },
     {
       name: "Script Writing",
@@ -106,7 +126,7 @@ const Services = () => {
       description: "Editing short reels for social media platforms.",
     },
     {
-      name: "5 Min Long Video",
+      name: "Video editing Services",
       price: "2500 Rs (Per Video)",
       description: "Producing 5-minute long videos for your brand.",
     },
@@ -117,6 +137,16 @@ const Services = () => {
     },
     {
       name: "Automated Calls",
+      price: "Prices Depends on the requirement",
+      description:
+        "Automating phone calls for marketing or informational purposes.",
+    }, {
+      name: "Followups Auromation",
+      price: "Prices Depends on the requirement",
+      description:
+        "Automating phone calls for marketing or informational purposes.",
+    }, {
+      name: "Cold outreach outomations",
       price: "Prices Depends on the requirement",
       description:
         "Automating phone calls for marketing or informational purposes.",
