@@ -2,7 +2,6 @@ import { useState } from "react";
 import axios from "axios";
 
 const ServiceForm = () => {
-
   const services = [
     "Website Development",
     "App Development",
@@ -34,7 +33,6 @@ const ServiceForm = () => {
     "Followups Auromation",
     "Cold outreach outomations",
   ];
-  
 
   const [selectedServices, setSelectedServices] = useState([]);
   const [formData, setFormData] = useState({
@@ -42,7 +40,6 @@ const ServiceForm = () => {
     lastName: "",
     email: "",
     mobile: "",
-    budget: "",
     message: "",
   });
   const [loading, setLoading] = useState(false);
@@ -92,7 +89,7 @@ const ServiceForm = () => {
         lastName: "",
         email: "",
         mobile: "",
-        budget: "",
+
         message: "",
       });
       setSelectedServices([]);
@@ -109,7 +106,6 @@ const ServiceForm = () => {
       formData.lastName &&
       formData.email &&
       formData.mobile &&
-      formData.budget &&
       formData.message &&
       selectedServices.length > 0
     );
@@ -124,7 +120,6 @@ const ServiceForm = () => {
           lastname: formData.lastName,
           email: formData.email,
           phone: formData.mobile,
-          budget: formData.budget,
           message: formData.message,
           servicesSelected: selectedServices,
         }
@@ -228,33 +223,19 @@ const ServiceForm = () => {
                 </div>
                 <div className="flex flex-col w-full lg:w-1/2 justify-center">
                   <label
-                    htmlFor="budget"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Budget
-                  </label>
-                  <input
-                    value={formData.budget}
-                    onChange={handleChange}
-                    name="budget" // Corrected name attribute
-                    className="mt-1 p-3 w-full h-12 border rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-                    type="text"
-                  />
-
-                  <label
                     htmlFor="message"
-                    className="block text-sm mt-3 font-medium text-gray-700"
+                    className="block text-sm my-1 font-medium text-gray-700"
                   >
                     Message
                   </label>
                   <textarea
                     value={formData.message}
                     onChange={handleChange}
-                    className="mt-1 p-3 resize-none w-full full border rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                    className="p-3 resize-none w-full full border rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                     name="message"
                     id=""
                     cols="30"
-                    rows="9"
+                    rows="12"
                   ></textarea>
                 </div>
               </div>

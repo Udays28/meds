@@ -45,7 +45,7 @@ const AboutPage = () => {
 
       <div className="  flex flex-col justify-between h-full p-4 lg:px-24 mt-5">
         <h2 className="mb-1 pt-12 text-3xl font-semibold leading-tight text-gray-900">
-          About Us
+          About Grothify
         </h2>
         <p className="mb-12 text-lg text-gray-500">
           Here is a few of the awesome Services we provide.

@@ -46,9 +46,7 @@ const ClientsPage = () => {
   ]);
   return (
     <>
-      <h1 className="z-30 py-12 relative text-4xl font-semibold text-center">
-        Our Clients
-      </h1>
+      
       <div className="relative">
         {client.map((items, index) => (
           <div

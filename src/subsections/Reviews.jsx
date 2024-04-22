@@ -25,34 +25,13 @@ const Reviews = () => {
       description:
         "  Some quick example text to build on the card title and make up the bulk of the card's content.",
     },
-    {
-      source:
-        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-      name: "Aryan Tyagi",
-      description:
-        "  Some quick example text to build on the card title and make up the bulk of the card's content.",
-    },
-    {
-      source:
-        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-      name: "Aryan Tyagi",
-      description:
-        "  Some quick example text to build on the card title and make up the bulk of the card's content.",
-    },
-    {
-      source:
-        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-      name: "Aryan Tyagi",
-      description:
-        "  Some quick example text to build on the card title and make up the bulk of the card's content.",
-    },
   ]);
   return (
-    <>
+    <div className="flex justify-center flex-col items-center">
       <h1 className="text-center mt-24 text-5xl font-semibold">
         Listen What our Clients Say
       </h1>{" "}
-      <div className="relative lg:px-24 p-4 flex min-h-screen flex-col lg:flex-row flex-wrap gap-16 justify-center ">
+      <div className="relative lg:px-24 p-4 flex py-16 w-fit   flex-col lg:flex-row flex-wrap gap-16 justify-center ">
         {videos.map((video, index) => (
           <div key={index} className="flex justify-center">
             <div className="rounded-lg shadow-lg bg-white max-w-sm">
@@ -80,7 +59,7 @@ const Reviews = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

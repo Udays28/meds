@@ -1,11 +1,11 @@
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
 const Home2 = () => {
 
 
   return (
     <section className=" flex justify-center lg:px-12 items-center h-full lg:h-full lg:pt-12">
+     
       <div className="container px-6 py-10 mx-auto">
         <div className="lg:-mx-6 lg:flex  lg:flex-row-reverse lg:px-12 lg:items-center">
           <img

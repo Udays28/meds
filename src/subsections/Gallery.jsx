@@ -6,9 +6,18 @@ const Gallery = () => {
           <div className="w-full lg:w-1/2">
             <div className="lg:max-w-lg">
               <h1 className="text-3xl font-semibold text-gray-800  lg:text-4xl">
-                gallery section
+                Gallery Section
               </h1>
               <p className="mt-5 text-gray-600 ">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+                beatae error laborum ab amet sunt recusandae? Reiciendis natus
+                perspiciatis optio. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Labore praesentium deleniti dolor eaque quo
+                impedit dignissimos totam officiis, asperiores est corporis
+                mollitia nihil voluptatibus earum quisquam odit quis!
+                Laudantium, nam. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. <br />
+              </p>{" "}<p className="mt-5 text-gray-600 ">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
                 beatae error laborum ab amet sunt recusandae? Reiciendis natus
                 perspiciatis optio. Lorem ipsum dolor sit amet consectetur
