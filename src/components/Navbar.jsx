@@ -89,7 +89,7 @@ const Navbar = () => {
         >
           <div className="flex flex-col gap-4 md:flex-row md:mx-6">
             <div className="flex flex-col h-6 trans px-2 overflow-hidden">
-              <Link className="duration-300" to="/">
+              <Link onClick={toggleMenu} className="duration-300" to="/">
                 Home
               </Link>
               <Link className="duration-300   text-purple-500" to="/">
@@ -100,7 +100,7 @@ const Navbar = () => {
               onClick={handleServiceClick}
               className="flex flex-col h-6 trans px-2 overflow-hidden"
             >
-              <Link className="duration-300" to="/">
+              <Link onClick={toggleMenu} className="duration-300" to="/">
                 Services
               </Link>
               <Link className="duration-300   text-purple-500" to="/">
@@ -108,7 +108,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="flex flex-col h-6 trans px-2 overflow-hidden">
-              <Link className="duration-300" to="/all-clients">
+              <Link onClick={toggleMenu} className="duration-300" to="/all-clients">
                 Clients
               </Link>
               <Link
@@ -119,7 +119,7 @@ const Navbar = () => {
               </Link>
             </div>{" "}
             <div className="flex flex-col h-6 trans px-2 overflow-hidden">
-              <Link className="duration-300" to="/portfolio">
+              <Link onClick={toggleMenu} className="duration-300" to="/portfolio">
                 Portfolio
               </Link>
               <Link className="duration-300   text-purple-500" to="/portfolio">
@@ -127,7 +127,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="flex flex-col h-6 trans px-2 overflow-hidden">
-              <Link className="duration-300" to="/reviews">
+              <Link onClick={toggleMenu} className="duration-300" to="/reviews">
                 Reviews
               </Link>
               <Link className="duration-300   text-purple-500" to="/reviews">
@@ -135,7 +135,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="flex flex-col h-6 trans px-2 overflow-hidden">
-              <Link className="duration-300" to="/blog">
+              <Link onClick={toggleMenu} className="duration-300" to="/blog">
                 Blog
               </Link>
               <Link className="duration-300   text-purple-500" to="/blog">
@@ -146,7 +146,7 @@ const Navbar = () => {
               onClick={handleFAQClick}
               className="flex flex-col h-6 trans px-2 overflow-hidden"
             >
-              <Link className="duration-300" to="/">
+              <Link onClick={toggleMenu} className="duration-300" to="/">
                 FAQs
               </Link>
               <Link className="duration-300   text-purple-500" to="/">
@@ -154,7 +154,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="flex flex-col h-6 trans px-2 overflow-hidden">
-              <Link className="duration-300" to="/about">
+              <Link onClick={toggleMenu} className="duration-300" to="/about">
                 About
               </Link>
               <Link className="duration-300   text-purple-500" to="/about">

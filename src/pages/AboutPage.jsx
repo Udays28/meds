@@ -14,21 +14,7 @@ const AboutPage = () => {
                   </span>
                 </h1>
                 <p className="mt-5 text-gray-600 ">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Porro beatae error laborum ab amet sunt recusandae? Reiciendis
-                  natus perspiciatis optio. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Labore praesentium deleniti
-                  dolor eaque quo impedit dignissimos totam officiis, asperiores
-                  est corporis mollitia nihil voluptatibus earum quisquam odit
-                  quis! Laudantium, nam. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. <br /> <br /> Inventore culpa deserunt
-                  minima, sint laboriosam ipsa, consectetur id vero rem
-                  consequuntur vel? Ipsam minus architecto illum doloribus
-                  corporis modi totam asperiores? Lorem, ipsum dolor sit amet
-                  consectetur adipisicing elit. Dolor corporis vero ipsum id eos
-                  quo ab hic? Laborum nihil ut perspiciatis, aliquam facilis
-                  architecto repellendus ipsum mollitia exercitationem excepturi
-                  inventore.
+                Welcome to Grothify, where digital marketing excellence meets innovation. I'm Deepam Soni, an experienced digital marketer with over 4 years of expertise in crafting compelling strategies that drive results.<br /> Since igniting my career journey in 2020, I've had the privilege of collaborating with numerous brands across the globe. From startups to established enterprises, I've helped businesses of all sizes establish a formidable market presence and achieve unparalleled success. <br /> <br /> At Grothify, we believe in the power of digital marketing to transform businesses and drive meaningful growth. Our mission is simple: to partner with you on your journey to digital success, leveraging cutting-edge strategies and unparalleled expertise to unlock your brand's full potential. <br /><br />Join me on this exciting journey as we navigate the ever-evolving digital landscape together, turning challenges into opportunities and dreams into reality. Let's embark on a transformative digital journey that propels your business to new heights of success!
                 </p>{" "}
               </div>
             </div>

@@ -27,11 +27,11 @@ const ServiceForm = () => {
     "3D Animation",
     "2D Animation",
     "Reels Editing",
-    "Video editing Services",
+    "Video Editing Services",
     "SMS Marketing",
     "Automated Calls",
-    "Followups Auromation",
-    "Cold outreach outomations",
+    "Follow-ups Automation",
+    "Cold Outreach Automations",
   ];
 
   const [selectedServices, setSelectedServices] = useState([]);
@@ -286,7 +286,7 @@ const ServiceForm = () => {
                         onChange={() => handleServiceToggle(service)}
                         className="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500 checked:bg-purple-600"
                       />
-                      <label htmlFor={service} className="ml-2 text-gray-700">
+                      <label htmlFor={service} className="ml-2 capitalize text-gray-700">
                         {service}
                       </label>
                     </div>

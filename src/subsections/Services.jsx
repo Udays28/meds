@@ -141,12 +141,12 @@ const Services = () => {
       description:
         "Automating phone calls for marketing or informational purposes.",
     }, {
-      name: "Followups Auromation",
+      name: "Follow-ups Automation",
       price: "Prices Depends on the requirement",
       description:
         "Automating phone calls for marketing or informational purposes.",
     }, {
-      name: "Cold outreach outomations",
+      name: "Cold outreach automations",
       price: "Prices Depends on the requirement",
       description:
         "Automating phone calls for marketing or informational purposes.",
@@ -167,7 +167,7 @@ const Services = () => {
                 className="break-inside shadow-xl hover:bg-gradient-to-bl hover:from-purple-700 hover:to-purple-900 hover:scale-95 duration-200 w-fit relative overflow-hidden flex flex-col justify-between space-y-2 text-sm rounded-xl p-4 mb-4 bg-gradient-to-tr from-purple-500 to-purple-700 text-white"
               >
                 <div className="flex flex-row items-center lg:space-x-3">
-                  <span className="text-base m-0 font-medium">
+                  <span className="text-base m-0 capitalize font-medium">
                     {service.name}
                   </span>
                 </div>

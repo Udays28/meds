@@ -8,6 +8,7 @@ import Home2 from "../subsections/Home2";
 import Services from "../subsections/Services";
 import Footer from "../components/Footer";
 import Gallery from "../subsections/Gallery";
+import Contact from "../subsections/Contact";
 
 const Homepage = () => {
   return (
@@ -65,9 +66,10 @@ const Homepage = () => {
         {/* <Domains /> */}
         <Services />
         <Reviews />
-        <Gallery/>
+        <Gallery />
         <Unique />
         <Faq />
+        <Contact />
         <Companies />
         <Footer />
       </section>
