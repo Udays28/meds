@@ -6,6 +6,13 @@ import { useState } from "react";
 const Reviews = () => {
   const [reviews, setReviews] = useState([
     {
+      name: "Annie Agrawal",
+      review:
+        "Great co-ordination , on time service ",
+      time: "2023/06/27",
+      company: "Food blogger",
+      project: "Food",
+    },{
       name: "Ritu kabdola ",
       review:
         "It was awesome, as the team was very cooperative , and is great at handling web work . They prioritise our time and also give proper attention . It was 2 months of work with them and they did it fantastically . I alot more then satisfied with their work and my website.",
