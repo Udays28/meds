@@ -4,16 +4,16 @@ import { useState } from "react";
 
 const Companies = () => {
   const [logos, setLogos] = useState([
-    "src/assets/company/l3.jpg",
-    "src/assets/company/l2.jpg",
-    "src/assets/company/l1.jpg",
-    "src/assets/company/l4.jpg",
-    "src/assets/company/l5.jpg",
-    "src/assets/company/l6.jpg",
-    "src/assets/company/l7.jpg",
-    "src/assets/company/l8.jpg",
-    "src/assets/company/l9.jpg",
-    "src/assets/company/l10.jpg",
+    "./company/l3.jpg",
+    "./company/l2.jpg",
+    "./company/l1.jpg",
+    "./company/l4.jpg",
+    "./company/l5.jpg",
+    "./company/l6.jpg",
+    "./company/l7.jpg",
+    "./company/l8.jpg",
+    "./company/l9.jpg",
+    "./company/l10.jpg",
   ]);
 
   return (

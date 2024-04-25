@@ -32,35 +32,35 @@ const Gallery = () => {
           <div className="flex lg:flex-row flex-col items-center h-full justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
             <div className="h-2/3 lg:w-80 w-full flex flex-row lg:flex-col gap-2 p-1 ">
               <div className="w-full lg:h-1/2 h-full rounded-lg">
-                <img className="" src="src/assets/images/g1.jpg" alt="" />
+                <img className="" src="./images/g1.jpg" alt="" />
               </div>
               <div className="w-full lg:h-1/2 h-full rounded-lg">
                 {" "}
-                <img className="" src="src/assets/images/g2.jpg" alt="" />
+                <img className="" src="./images/g2.jpg" alt="" />
               </div>
             </div>
             <div className="h-full w-80 flex flex-col gap-2 p-1 ">
               <div className="w-full lg:h-1/2 h-full rounded-lg">
                 {" "}
-                <img className="" src="src/assets/images/g5.jpg" alt="" />
+                <img className="" src="./images/g5.jpg" alt="" />
               </div>
               <div className="w-full lg:h-1/2 h-full rounded-lg">
                 {" "}
-                <img className="" src="src/assets/images/g7.png" alt="" />
+                <img className="" src="./images/g7.png" alt="" />
               </div>
               <div className="w-full lg:h-1/2 h-full rounded-lg">
                 {" "}
-                <img className="" src="src/assets/images/g6.jpg" alt="" />
+                <img className="" src="./images/g6.jpg" alt="" />
               </div>
             </div>
             <div className="h-2/3 lg:w-80 w-full flex flex-row lg:flex-col gap-2 p-1">
               <div className="w-full lg:h-1/2 h-full rounded-lg">
                 {" "}
-                <img className="" src="src/assets/images/g9.jpg" alt="" />
+                <img className="" src="./images/g9.jpg" alt="" />
               </div>
               <div className="w-full lg:h-1/2 h-full rounded-lg">
                 {" "}
-                <img className="" src="src/assets/images/g8.jpg" alt="" />
+                <img className="" src="./images/g8.jpg" alt="" />
               </div>
             </div>
           </div>

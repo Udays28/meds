@@ -6,7 +6,7 @@ const Reviews = () => {
   const [videos, setVideos] = useState([
     {
       source:
-        "src/assets/videos/v1.mp4",
+        "./videos/v1.mp4",
       name: "Manan Joshi",
       description:
         "  Some quick example text to build on the card title and make up the bulk of the card's content.",
