@@ -17,9 +17,9 @@ const Homepage = () => {
       <section className=" text-black">
         <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
           <div className="mx-auto text-center">
-            <h1 className="bg-gradient-to-r from-purple-400 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-8xl">
-              Understand User Flow.
-              <span className="sm:block"> Increase Conversion. </span>
+            <h1 className="bg-gradient-to-r from-purple-400 h-full via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-8xl">
+              Transforming Vision into{" "}
+              <span className="sm:block"> Digital Reality. </span>
             </h1>
 
             <p className="mx-auto mt-8 max-w-2xl sm:text-md/relaxed">

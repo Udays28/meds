@@ -51,7 +51,7 @@ const ClientsPage = () => {
         {client.map((items, index) => (
           <div
             key={index}
-            className="sticky top-0 lg:top-20 h-full flex flex-col items-center justify-center"
+            className="sticky top-12 lg:top-20 h-full flex flex-col items-center justify-center"
           >
             <header className="bg-white py-6 z-10 w-full lg:px-20 ">
               <div className="container px-6 mx-auto">

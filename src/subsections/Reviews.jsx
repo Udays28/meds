@@ -6,8 +6,8 @@ const Reviews = () => {
   const [videos, setVideos] = useState([
     {
       source:
-        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-      name: "Aryan Tyagi",
+        "src/assets/videos/v1.mp4",
+      name: "Manan Joshi",
       description:
         "  Some quick example text to build on the card title and make up the bulk of the card's content.",
     },
