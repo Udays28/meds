@@ -91,9 +91,7 @@ const Reviews = () => {
                 <h5 className="block font-san capitalizes text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                   {review.name}
                 </h5>
-                <div className="5 flex items-center gap-0">
-                  <h1>{review.time}</h1>
-                </div>
+                
               </div>
               <p className="block font-sans bg-purple-200 lowercase px-4 rounded-md  w-fit text-sm font-light leading-relaxed text-blue-gray-900 antialiased">
                 {review.company}
