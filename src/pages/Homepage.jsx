@@ -9,10 +9,12 @@ import Services from "../subsections/Services";
 import Footer from "../components/Footer";
 import Gallery from "../subsections/Gallery";
 import Contact from "../subsections/Contact";
+import Popup from "../components/Popup";
 
 const Homepage = () => {
   return (
     <>
+    <Popup/>
       <Home2 />
       <section className=" text-black">
         <div className="mx-auto max-w-screen-xl px-4 lg:py-32 lg:flex lg:h-screen lg:items-center">
