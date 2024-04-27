@@ -54,7 +54,7 @@ const Popup = () => {
     <>
       {isVisible && (
         <div>
-          <section className="fixed z-20 max-w-sm p-4 m-auto bg-white shadow-lg border border-gray-200 right-8 bottom-8 :border-gray-700 rounded-2xl">
+          <section className="fixed z-20 max-w-sm p-4 m-auto bg-white shadow-lg border border-gray-200 lg:right-8 bottom-8 :border-gray-700 rounded-2xl">
             <h2 className="font-semibold text-gray-800 :text-white">
               🚀 Stay Updated!
             </h2>
@@ -92,7 +92,7 @@ const Popup = () => {
           </form>
           <section className="max-w-4xl mx-auto bg-white :bg-purple-800">
             <h2 className="text-lg font-semibold text-gray-700 capitalize :text-white">
-              Account settings
+              Welcome To Grothify{" "}
             </h2>
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
