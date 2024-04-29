@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 
 const Portfolio = () => {
   // State to store information of the clicked portfolio item
