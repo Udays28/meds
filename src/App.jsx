@@ -8,7 +8,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import ServicesForm from "./pages/ServicesForm";
 import Blog from "./pages/Blog";
 import Reviews from "./pages/Reviews";
-import Portfolio from "./pages/Portfolio";
+// import Portfolio from "./pages/Portfolio";
+import PortfolioWork from "./pages/PortfolioWork";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/message" element={<Message />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio" element={<PortfolioWork />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/all-clients" element={<ClientsPage />} />
