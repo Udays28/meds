@@ -46,7 +46,7 @@ const ClientsPage = () => {
   ]);
   return (
     <>
-      <section className="bg-white  mt-12  lg:px-24        :bg-gray-900">
+      <section className="bg-white  mt-12  lg:px-24   :bg-gray-900">
         <div className="container px-6 py-10 mx-auto">
           <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl            :text-white">
             Our <span className="text-purple-500">Clients</span>
@@ -60,13 +60,13 @@ const ClientsPage = () => {
             {client.map((clients, index) => (
               <div
                 key={index}
-                className="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-purple-600     hover:text-white       :border-gray-700            :hover:border-transparent"
+                className="lg:px-12 lg:py-8 p-4 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-purple-600     hover:text-white       :border-gray-700            :hover:border-transparent"
               >
                 <div className="flex flex-col sm:-mx-4 sm:flex-row">
                   <img
                     className="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300"
                     src={clients.image}
-                    alt
+                    alt=""
                   />
                   <div className="mt-4 sm:mx-4 sm:mt-0">
                     <h1 className="text-xl font-semibold text-gray-700 capitalize md:text-2xl            :text-white group-hover:text-white">
