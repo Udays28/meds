@@ -108,13 +108,13 @@ const PortfolioWork = () => {
       </h1>
       <div
         ref={carouselRef}
-        className="carousel carousel-center bg-zinc-200 p-4 space-x-4  rounded-box"
+        className="carousel carousel-center space-x-4"
         onMouseDown={handleMouseDown} // Add onMouseDown event listener
         style={{ cursor: isGrabbing ? "grabbing" : "grab" }} // Change cursor based on grabbing state
       >
         {socialMediaMarketing.map((items, index) => (
-          <div key={index} className="carousel-item">
-            <img className="h-96" src={items.image} alt="Burger" />
+          <div key={index} className="carousel-item ">
+            <img className="h-96 rounded-xl" src={items.image} alt="Burger" />
           </div>
         ))}
       </div>
