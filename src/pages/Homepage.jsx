@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Reviews from "../subsections/Reviews";
 import Faq from "../subsections/Faq";
 import Companies from "../subsections/Companies";
-import Unique from "../subsections/Unique";
+// import Unique from "../subsections/Unique";
 import Home2 from "../subsections/Home2";
 import Services from "../subsections/Services";
 import Footer from "../components/Footer";
@@ -69,7 +69,7 @@ const Homepage = () => {
         <Services />
         <Reviews />
         <Gallery />
-        <Unique />
+        {/* <Unique /> */}
         <Faq />
         <Contact />
         <Companies />
