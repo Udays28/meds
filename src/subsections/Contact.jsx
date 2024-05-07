@@ -32,8 +32,7 @@ const Contact = () => {
                   />
                 </svg>
                 <span className="mx-2 text-gray-700 truncate w-72        :text-gray-400">
-                  Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522
-                </span>
+                Janakpuri west, Blue line, New Delhi.                </span>
               </p>
               <p className="flex items-start -mx-2">
                 <svg
@@ -51,8 +50,7 @@ const Contact = () => {
                   />
                 </svg>
                 <span className="mx-2 text-gray-700 truncate w-72        :text-gray-400">
-                  (257) 563-7401
-                </span>
+                9893921411                </span>
               </p>
               <p className="flex items-start -mx-2">
                 <svg

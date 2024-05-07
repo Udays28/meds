@@ -1,4 +1,20 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
+
+  const scrolltoservice = () => {
+    const about = document.getElementById("service");
+    if (about) {
+      about.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrolltosFAQ = () => {
+    const faq = document.getElementById("faq");
+    if (faq) {
+      faq.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <footer className="">
       <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
@@ -12,67 +28,74 @@ const Footer = () => {
           consequuntur amet culpa cum itaque neque.
         </p>
 
-        <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
-          <li>
-            <a
-              className="text-gray-700 transition hover:text-purple-700/75 hover:underline"
-              href="#"
+        <div className="flex flex-wrap justify-center my-4 gap-4 md:flex-row md:mx-6">
+            <div className="flex flex-col h-6 trans jus px-2 overflow-hidden">
+              <Link   className="duration-300" to="/">
+                Home
+              </Link>
+              <Link className="duration-300   text-purple-500" to="/">
+                Home
+              </Link>
+            </div>
+            <div
+              onClick={scrolltoservice}
+              className="flex flex-col h-6 trans px-2 overflow-hidden"
             >
-              {" "}
-              About{" "}
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="text-gray-700 transition hover:text-purple-700/75 hover:underline"
-              href="#"
+              <Link   className="duration-300" to="/">
+                Services
+              </Link>
+              <Link className="duration-300   text-purple-500" to="/">
+                Services
+              </Link>
+            </div>
+            <div className="flex flex-col h-6 trans px-2 overflow-hidden">
+              <Link   className="duration-300" to="/all-clients">
+                Clients
+              </Link>
+              <Link
+                className="duration-300   text-purple-500"
+                to="/all-clients"
+              >
+                Clients
+              </Link>
+            </div>{" "}
+            <div className="flex flex-col h-6 trans px-2 overflow-hidden">
+              <Link   className="duration-300" to="/portfolio">
+                Portfolio
+              </Link>
+              <Link className="duration-300   text-purple-500" to="/portfolio">
+                Portfolio
+              </Link>
+            </div>
+            <div className="flex flex-col h-6 trans px-2 overflow-hidden">
+              <Link   className="duration-300" to="/reviews">
+                Reviews
+              </Link>
+              <Link className="duration-300   text-purple-500" to="/reviews">
+                Reviews
+              </Link>
+            </div>
+          
+            <div
+              onClick={scrolltosFAQ}
+              className="flex flex-col h-6 trans px-2 overflow-hidden"
             >
-              {" "}
-              Careers{" "}
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="text-gray-700 transition hover:text-purple-700/75 hover:underline"
-              href="#"
-            >
-              {" "}
-              History{" "}
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="text-gray-700 transition hover:text-purple-700/75 hover:underline"
-              href="#"
-            >
-              {" "}
-              Services{" "}
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="text-gray-700 transition hover:text-purple-700/75 hover:underline"
-              href="#"
-            >
-              {" "}
-              Projects{" "}
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="text-gray-700 transition hover:text-purple-700/75 hover:underline"
-              href="#"
-            >
-              {" "}
-              Blog{" "}
-            </a>
-          </li>
-        </ul>
+              <Link   className="duration-300" to="/">
+                FAQs
+              </Link>
+              <Link className="duration-300   text-purple-500" to="/">
+                FAQs
+              </Link>
+            </div>
+            <div className="flex flex-col h-6 trans px-2 overflow-hidden">
+              <Link   className="duration-300" to="/about">
+                About
+              </Link>
+              <Link className="duration-300   text-purple-500" to="/about">
+                About
+              </Link>
+            </div>
+          </div>
 
         <ul className="mt-12 flex justify-center gap-6 md:gap-8">
           <li>

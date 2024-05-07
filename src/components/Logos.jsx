@@ -33,7 +33,7 @@ const Logos = () => {
       >
         {/* Render duplicated logos */}
         {duplicatedLogos.map((logo, index) => (
-          <div key={index} className="flex-shrink-0 m-4" style={{ width: `${200 / logos.length}%` }}>
+          <div key={index} className="flex-shrink-0 lg:m-0 m-2" style={{ width: `${200 / logos.length}%` }}>
             <div className="flex items-center justify-center h-full">
               <img src={logo} alt={`Logo ${index}`} className="max-h-32" />
             </div>

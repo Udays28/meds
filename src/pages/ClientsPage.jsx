@@ -46,45 +46,46 @@ const ClientsPage = () => {
   ]);
   return (
     <>
-      
-      <div className="relative">
-        {client.map((items, index) => (
-          <div
-            key={index}
-            className="sticky top-12 lg:top-20 h-full flex flex-col items-center justify-center"
-          >
-            <header className="bg-white py-6 z-10 w-full lg:px-20 ">
-              <div className="container px-6 mx-auto">
-                <div className="items-center gap-6 lg:flex">
-                  <div className="flex items- justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
-                    <img
-                      className="lg:w-[70%] w-[30%] md:w-[20%] h-[90%] lg:max-w-3xl"
-                      src={items.image}
-                      alt="Catalogue-pana.svg"
-                    />
-                  </div>
-                  <div className="w-full lg:w-1/2">
-                    <div className="lg:max-w-lg">
-                      <h1 className="text-xl text-purple-500 font-semibold my-4">
-                        {items.name}
-                      </h1>
-                      <h1 className="text-xl font-bold text-gray-800  lg:text-4xl">
-                        {items.tagline}
-                      </h1>
-                      <p className="mt-5  text-gray-600 ">
-                        {items.description}
-                      </p>
-                      <p className="my-6 bg-purple-200 w-fit rounded-full text-black px-4 py-1">
-                        {items.bussiness}
-                      </p>
-                    </div>
+      <section className="bg-white  mt-12  lg:px-24        :bg-gray-900">
+        <div className="container px-6 py-10 mx-auto">
+          <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl            :text-white">
+            Our <span className="text-purple-500">Clients</span>
+          </h1>
+          <p className="max-w-2xl mx-auto my-6 text-center text-gray-500            :text-gray-300">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+            incidunt ex placeat modi magni quia error alias, adipisci rem
+            similique, at omnis eligendi optio eos harum.
+          </p>
+          <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
+            {client.map((clients, index) => (
+              <div
+                key={index}
+                className="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-purple-600     hover:text-white       :border-gray-700            :hover:border-transparent"
+              >
+                <div className="flex flex-col sm:-mx-4 sm:flex-row">
+                  <img
+                    className="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300"
+                    src={clients.image}
+                    alt
+                  />
+                  <div className="mt-4 sm:mx-4 sm:mt-0">
+                    <h1 className="text-xl font-semibold text-gray-700 capitalize md:text-2xl            :text-white group-hover:text-white">
+                      {clients.name}{" "}
+                    </h1>
+                    <p className="mt-2 text-gray-500 capitalize            :text-gray-300 group-hover:text-gray-300">
+                      {clients.bussiness}
+                    </p>
                   </div>
                 </div>
+               <h1 className="font-semibold my-4">{clients.tagline}</h1>
+                <p className="mt-4 text-gray-500 capitalize text-sm           :text-gray-300 group-hover:text-gray-300">
+                 {clients.description}
+                </p>
               </div>
-            </header>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      </section>
     </>
   );
 };
