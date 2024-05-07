@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Popup = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -69,12 +70,14 @@ const Popup = () => {
               >
                 No Thanks
               </button>
+              <Link to="/services-form">
               <button
-                onClick={openModal}
+              
                 className="text-xs bg-purple-500 font-medium rounded-lg hover:bg-purple-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none"
-              >
+                >
                 Yes, Awesome
               </button>
+                </Link>
             </div>
           </section>
         </div>

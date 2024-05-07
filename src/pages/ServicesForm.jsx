@@ -36,8 +36,8 @@ const ServiceForm = () => {
 
   const [selectedServices, setSelectedServices] = useState([]);
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    fullName: "",
+   
     email: "",
     mobile: "",
     message: "",
@@ -86,7 +86,6 @@ const ServiceForm = () => {
       setSuccessMessage(response.message);
       setFormData({
         firstName: "",
-        lastName: "",
         email: "",
         mobile: "",
 
@@ -103,7 +102,7 @@ const ServiceForm = () => {
   const validateForm = () => {
     return (
       formData.firstName &&
-      formData.lastName &&
+   
       formData.email &&
       formData.mobile &&
       formData.message &&
@@ -117,7 +116,7 @@ const ServiceForm = () => {
         "http://localhost:3001/api/v1/service-formMessage",
         {
           firstname: formData.firstName,
-          lastname: formData.lastName,
+        
           email: formData.email,
           phone: formData.mobile,
           message: formData.message,
@@ -150,39 +149,23 @@ const ServiceForm = () => {
                 <div className="lg:w-1/2 w-full flex flex-col justify-between">
                   <div className="col-span-6 sm:col-span-3">
                     <label
-                      htmlFor="FirstName"
+                      htmlFor="FullName"
                       className="block text-sm font-medium text-gray-700"
                     >
-                      First Name
+                      Full Name
                     </label>
 
                     <input
                       type="text"
-                      id="FirstName"
-                      name="firstName"
-                      value={formData.firstName}
+                      id="FullName"
+                      name="FullName"
+                      value={formData.fullName}
                       onChange={handleChange}
                       className="mt-1 p-3 w-full h-12 border rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                     />
                   </div>
 
-                  <div className="col-span-6 sm:col-span-3">
-                    <label
-                      htmlFor="LastName"
-                      className="block text-sm font-medium text-gray-700"
-                    >
-                      Last Name
-                    </label>
-
-                    <input
-                      type="text"
-                      id="LastName"
-                      name="lastName"
-                      value={formData.lastName}
-                      onChange={handleChange}
-                      className="mt-1 p-3 w-full h-12 border rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-                    />
-                  </div>
+                  
 
                   <div className="col-span-6">
                     <label
