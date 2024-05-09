@@ -9,7 +9,8 @@ const Contact = () => {
             <h1 className="text-2xl font-semibold text-gray-800 capitalize        :text-white lg:text-5xl">
               Contact us for <br /> more info
             </h1>
-            <p className="my-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, deserunt laboriosam tenetur aperiam numquam molestias illum repellat? Cum in voluptates laboriosam incidunt enim ratione, esse, est corporis necessitatibus error voluptate?</p>
+            <p className="my-6">
+We welcome your inquiry and look forward to connecting with you! Whether you have questions, suggestions, or simply want to reach out, please feel free to fill out the form below. Your message is important to us, and we will do our best to respond promptly. Thank you for reaching out, and we appreciate the opportunity to assist you.</p>
             <div className=" space-y-8 md:mt-8">
               <p className="flex items-start -mx-2">
                 <svg
