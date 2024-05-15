@@ -1,6 +1,60 @@
-
+import axios from "axios";
+import { useState } from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+    console.log(formData)
+    setErrorMessage("");
+    setSuccessMessage("");
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!validateForm()) {
+      setErrorMessage("Please fill in all fields.");
+      setTimeout(() => setErrorMessage(""), 3000); // Clear error message after 3 seconds
+
+      return;
+    }
+    setLoading(true);
+    try {
+      const response = await axios.post(
+        "http://localhost:3001/api/v1/message",
+        formData
+      ); // Assuming the backend route is '/api/messages'
+      setSuccessMessage(response.data.message);
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      }); // Clear form fields after successful submission
+    } catch (error) {
+      setErrorMessage(
+        error.response?.data?.message ||
+          "Something went wrong. Please try again."
+      ); // Display the error message from the server or a default message
+    }
+    setLoading(false);
+  };
+
+  const validateForm = () => {
+    const { name, email, message } = formData;
+    return name && email && message;
+  };
+
   return (
     <section className="bg-white lg:px-24       :bg-gray-900">
       <div className="container px-6 py-12 mx-auto">
@@ -10,7 +64,13 @@ const Contact = () => {
               Contact us for <br /> more info
             </h1>
             <p className="my-6">
-We welcome your inquiry and look forward to connecting with you! Whether you have questions, suggestions, or simply want to reach out, please feel free to fill out the form below. Your message is important to us, and we will do our best to respond promptly. Thank you for reaching out, and we appreciate the opportunity to assist you.</p>
+              We welcome your inquiry and look forward to connecting with you!
+              Whether you have questions, suggestions, or simply want to reach
+              out, please feel free to fill out the form below. Your message is
+              important to us, and we will do our best to respond promptly.
+              Thank you for reaching out, and we appreciate the opportunity to
+              assist you.
+            </p>
             <div className=" space-y-8 md:mt-8">
               <p className="flex items-start -mx-2">
                 <svg
@@ -33,7 +93,8 @@ We welcome your inquiry and look forward to connecting with you! Whether you hav
                   />
                 </svg>
                 <span className="mx-2 text-gray-700 truncate w-72        :text-gray-400">
-                Janakpuri west, Blue line, New Delhi.                </span>
+                  Janakpuri west, Blue line, New Delhi.{" "}
+                </span>
               </p>
               <p className="flex items-start -mx-2">
                 <svg
@@ -51,7 +112,8 @@ We welcome your inquiry and look forward to connecting with you! Whether you hav
                   />
                 </svg>
                 <span className="mx-2 text-gray-700 truncate w-72        :text-gray-400">
-                9893921411                </span>
+                  9893921411{" "}
+                </span>
               </p>
               <p className="flex items-start -mx-2">
                 <svg
@@ -155,12 +217,14 @@ We welcome your inquiry and look forward to connecting with you! Whether you hav
               <h1 className="text-lg font-medium text-gray-700">
                 What do you want to ask
               </h1>
-              <form className="mt-6">
+              <form onSubmit={handleSubmit} className="mt-6">
                 <div className="flex-1">
                   <label className="block mb-2 text-sm text-gray-600        :text-gray-200">
                     Full Name
                   </label>
                   <input
+                    value={formData.name}
+                    onChange={handleChange}
                     type="text"
                     placeholder="John Doe"
                     className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md        :placeholder-gray-600        :bg-gray-900        :text-gray-300        :border-gray-700 focus:border-purple-400        :focus:border-purple-400 focus:ring-purple-400 focus:outline-none focus:ring focus:ring-opacity-40"
@@ -171,6 +235,8 @@ We welcome your inquiry and look forward to connecting with you! Whether you hav
                     Email address
                   </label>
                   <input
+                    value={formData.email}
+                    onChange={handleChange}
                     type="email"
                     placeholder="johndoe@example.com"
                     className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md        :placeholder-gray-600        :bg-gray-900        :text-gray-300        :border-gray-700 focus:border-purple-400        :focus:border-purple-400 focus:ring-purple-400 focus:outline-none focus:ring focus:ring-opacity-40"
@@ -181,15 +247,24 @@ We welcome your inquiry and look forward to connecting with you! Whether you hav
                     Message
                   </label>
                   <textarea
+                    value={formData.message}
+                    onChange={handleChange}
                     className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48        :placeholder-gray-600        :bg-gray-900        :text-gray-300        :border-gray-700 focus:border-purple-400        :focus:border-purple-400 focus:ring-purple-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Message"
-                    defaultValue={""}
+
                   />
                 </div>
-                <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-purple-500 rounded-md hover:bg-purple-400 focus:outline-none focus:ring focus:ring-purple-300 focus:ring-opacity-50">
-                  get in touch
+                <button
+                  disabled={loading}
+                  className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-purple-500 rounded-md hover:bg-purple-400 focus:outline-none focus:ring focus:ring-purple-300 focus:ring-opacity-50"
+                >
+                  {loading ? "Sending..." : "Get in touch"}{" "}
                 </button>
               </form>
+              {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
+              {successMessage && (
+                <p style={{ color: "green" }}>{successMessage}</p>
+              )}
             </div>
           </div>
         </div>

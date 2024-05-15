@@ -5,8 +5,6 @@ const Message = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
-    budget: '',
     message: ''
   });
   const [errorMessage, setErrorMessage] = useState('');
@@ -38,8 +36,6 @@ const Message = () => {
       setFormData({
         name: '',
         email: '',
-        phone: '',
-        budget: '',
         message: ''
       }); // Clear form fields after successful submission
      
@@ -50,8 +46,8 @@ const Message = () => {
   };
 
   const validateForm = () => {
-    const { name, email, phone, budget, message } = formData;
-    return name && email && phone && budget && message;
+    const { name, email,  message } = formData;
+    return name && email  && message;
   };
 
   return (
@@ -111,33 +107,10 @@ const Message = () => {
                   />
                 </div>
 
-                <div>
-                  <label className="sr-only" htmlFor="phone">
-                    Phone
-                  </label>
-                  <input
-                    className="w-full rounded-lg border border-gray-200 p-3 text-sm"
-                    placeholder="Phone Number"
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                  />
-                </div>
+                
               </div>
 
-              <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-1">
-                <input
-                  className="w-full rounded-lg border border-gray-200 p-3 text-sm"
-                  placeholder="Your Budget"
-                  type="text"
-                  id="budget"
-                  name="budget"
-                  value={formData.budget}
-                  onChange={handleChange}
-                />
-              </div>
+              
 
               <div>
                 <label className="sr-only" htmlFor="message">

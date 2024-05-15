@@ -2,8 +2,8 @@
 
 const Blog = () => {
   return (
-<div className="flex justify-center items-center">
-  <div className="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
+<div className="flex h-screen flex-col justify-center p-4 items-center">
+  {/* <div className="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
     <div role="main" className="flex flex-col items-center justify-center">
       <h1 className="text-4xl font-semibold leading-9 text-center text-gray-800 ">This Week Blogs</h1>
       <p className="text-base leading-normal text-center text-gray-600  mt-4 lg:w-1/2 md:w-10/12 w-11/12">If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough</p>
@@ -116,7 +116,10 @@ const Blog = () => {
         </div>
       </div>
     </div>
-  </div>
+  </div> */}
+  <h1 className="lg:text-6xl text-4xl my-4 text-black font-semibold text-center"> <span className="text-purple-600">Stay Tuned </span><br />for Insights and Updates</h1>
+  
+  <p className="lg:px-80 my-6 text-center">We’re excited to announce that our blog is coming soon! Here, you'll find a wealth of knowledge, insights, and updates on all things digital marketing. Our blog will feature expert advice, industry trends, success stories, and practical tips to help your business thrive in the digital landscape.</p>
 </div>
 
   )

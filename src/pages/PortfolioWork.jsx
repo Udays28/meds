@@ -96,10 +96,10 @@ const PortfolioWork = () => {
     <div className="lg:px-28 p-4 mt-1">
       <div className="md:w-2/3 lg:w-1/2 mt-12 text-black">
         <h2 className="my-8 text-2xl font-bold text-black md:text-4xl">
-          Our Work
+        Showcasing Our Success: <span className="text-purple-600"> Explore Our Portfolio</span>
         </h2>
         <p className="text-black">
-          We have built many products and some of them are below
+        Dive into our portfolio to witness the transformative power of our digital marketing solutions. Each project reflects our dedication to driving growth and achieving results for our clients.
         </p>
       </div>
 

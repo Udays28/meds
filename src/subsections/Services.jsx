@@ -23,8 +23,7 @@ const Services = () => {
     {
       name: "E-Commerce Website",
       price: "35000 Rs",
-      description:
-        "Developing an e-commerce website for selling products online.",
+      description: "Developing an e-commerce website for selling products online.",
     },
     {
       name: "Facebook Ads",
@@ -44,80 +43,81 @@ const Services = () => {
     {
       name: "Funnel Creation",
       price: "3000 Rs",
-      description: "Creating 3D logos with unique designs.",
-    }, {
+      description: "Building sales funnels to optimize your conversion rates.",
+    },
+    {
       name: "3D Logo Designing",
       price: "3000 Rs",
       description: "Creating 3D logos with unique designs.",
     },
-
     {
       name: "Google Ads",
       price: "8000 Rs (Per Month)",
       description: "Creating and managing Google ads campaigns.",
     },
-
     {
-      name: "landing Page creation",
+      name: "Landing Page Creation",
       price: "1000 Rs (Single Page)",
-      description: "Writing engaging content for your website or blog.",
-    },{
+      description: "Designing and developing effective landing pages.",
+    },
+    {
       name: "Content Writing",
       price: "1000 Rs (Single Page)",
       description: "Writing engaging content for your website or blog.",
     },
     {
-      name: "Youtube Channel Management",
+      name: "YouTube Channel Management",
       price: "25000 Rs (Per Month)",
       description: "Managing and growing your YouTube channel.",
     },
     {
       name: "Graphics Designing",
-      price: "200 Rs Per Graphics",
+      price: "200 Rs Per Graphic",
       description: "Creating visually appealing graphics for your brand.",
     },
-
     {
       name: "E-Mail Marketing",
       price: "10000 Rs (Per Month)",
       description: "Sending targeted email campaigns to your subscribers.",
     },
     {
-      name: "Whatsapp Chat bot",
+      name: "WhatsApp Chat Bot",
       price: "10000 Rs (Per Month)",
-      description: "Creating Chat Bots for whatsapp",
-    },  {
-      name: "Whatsapp Automation",
+      description: "Creating chatbots for WhatsApp to engage your audience.",
+    },
+    {
+      name: "WhatsApp Automation",
       price: "10000 Rs (Per Month)",
       description: "Automating your WhatsApp marketing campaigns.",
-    },  {
-      name: "Lindekin Automation",
+    },
+    {
+      name: "LinkedIn Automation",
       price: "10000 Rs (Per Month)",
-      description: "Automating your Lindekin marketing campaigns.",
-    }, {
-      name: "Social Media Marketing automation",
+      description: "Automating your LinkedIn marketing campaigns.",
+    },
+    {
+      name: "Social Media Marketing Automation",
       price: "10000 Rs (Per Month)",
-      description: "Automating your Social Media marketing campaigns.",
+      description: "Automating your social media marketing efforts.",
     },
     {
       name: "Script Writing",
-      price: "2000 Rs (Per page)",
+      price: "2000 Rs (Per Page)",
       description: "Writing scripts for videos, ads, or presentations.",
     },
     {
       name: "Lead Generation",
       price: "5000 Rs (Per Month)",
-      description:
-        "Generating leads for your business through various channels.",
+      description: "Generating leads for your business through various channels.",
     },
     {
       name: "3D Animation",
-      price: "40000 Rs (Per Month)",
+      price: "40000 Rs (Per Minute)",
       description: "Creating 3D animations for videos, ads, or presentations.",
     },
     {
       name: "2D Animation",
-      price: "7000 Rs (Per Minutes)",
+      price: "7000 Rs (Per Minute)",
       description: "Producing 2D animations for various purposes.",
     },
     {
@@ -126,9 +126,9 @@ const Services = () => {
       description: "Editing short reels for social media platforms.",
     },
     {
-      name: "Video editing Services",
+      name: "Video Editing Services",
       price: "2500 Rs (Per Video)",
-      description: "Producing 5-minute long videos for your brand.",
+      description: "Editing videos to enhance your brand's visual appeal.",
     },
     {
       name: "SMS Marketing",
@@ -137,21 +137,21 @@ const Services = () => {
     },
     {
       name: "Automated Calls",
-      price: "Prices Depends on the requirement",
-      description:
-        "Automating phone calls for marketing or informational purposes.",
-    }, {
+      price: "Prices Depend on the Requirement",
+      description: "Setting up automated phone calls for various purposes.",
+    },
+    {
       name: "Follow-ups Automation",
-      price: "Prices Depends on the requirement",
-      description:
-        "Automating phone calls for marketing or informational purposes.",
-    }, {
-      name: "Cold outreach automations",
-      price: "Prices Depends on the requirement",
-      description:
-        "Automating phone calls for marketing or informational purposes.",
+      price: "Prices Depend on the Requirement",
+      description: "Automating follow-up calls to engage and retain customers.",
+    },
+    {
+      name: "Cold Outreach Automations",
+      price: "Prices Depend on the Requirement",
+      description: "Automating cold outreach campaigns to potential clients.",
     },
   ]);
+  
   return (
     <>
       <h1 id="service" className="text-center my-6 text-5xl font-semibold">

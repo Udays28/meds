@@ -36,8 +36,7 @@ const ServiceForm = () => {
 
   const [selectedServices, setSelectedServices] = useState([]);
   const [formData, setFormData] = useState({
-    fullName: "",
-   
+    fullname: "",
     email: "",
     mobile: "",
     message: "",
@@ -67,6 +66,7 @@ const ServiceForm = () => {
       ...formData,
       [e.target.name]: e.target.value,
     });
+    console.log(formData)
     setErrorMessage("");
     setSuccessMessage("");
   };
@@ -85,10 +85,9 @@ const ServiceForm = () => {
       const response = await submitFormData(formData, selectedServices);
       setSuccessMessage(response.message);
       setFormData({
-        firstName: "",
+        fullname: "",
         email: "",
         mobile: "",
-
         message: "",
       });
       setSelectedServices([]);
@@ -101,8 +100,7 @@ const ServiceForm = () => {
 
   const validateForm = () => {
     return (
-      formData.firstName &&
-   
+      formData.fullname &&
       formData.email &&
       formData.mobile &&
       formData.message &&
@@ -115,8 +113,7 @@ const ServiceForm = () => {
       const response = await axios.post(
         "http://localhost:3001/api/v1/service-formMessage",
         {
-          firstname: formData.firstName,
-        
+          fullname: formData.fullname,
           email: formData.email,
           phone: formData.mobile,
           message: formData.message,
@@ -149,7 +146,7 @@ const ServiceForm = () => {
                 <div className="lg:w-1/2 w-full flex flex-col justify-between">
                   <div className="col-span-6 sm:col-span-3">
                     <label
-                      htmlFor="FullName"
+                      htmlFor="fullname"
                       className="block text-sm font-medium text-gray-700"
                     >
                       Full Name
@@ -157,9 +154,9 @@ const ServiceForm = () => {
 
                     <input
                       type="text"
-                      id="FullName"
-                      name="FullName"
-                      value={formData.fullName}
+                      id="fullname"
+                      name="fullname"
+                      value={formData.fullname}
                       onChange={handleChange}
                       className="mt-1 p-3 w-full h-12 border rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                     />

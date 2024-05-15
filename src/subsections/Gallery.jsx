@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 const Gallery = () => {
   return (
     <header className="bg-white lg:pt-12 lg:px-24 ">
@@ -6,26 +7,21 @@ const Gallery = () => {
           <div className="w-full lg:w-1/2">
             <div className="lg:max-w-lg">
               <h1 className="text-3xl font-semibold text-gray-800  lg:text-4xl">
-                Gallery Section
+                Moments of Inspiration: Our Journey with{" "}
+                <span className="text-purple-500">Digital Marketing</span>{" "}
+                Leaders{" "}
               </h1>
               <p className="mt-5 text-gray-600 ">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-                beatae error laborum ab amet sunt recusandae? Reiciendis natus
-                perspiciatis optio. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Labore praesentium deleniti dolor eaque quo
-                impedit dignissimos totam officiis, asperiores est corporis
-                mollitia nihil voluptatibus earum quisquam odit quis!
-                Laudantium, nam. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. <br />
-              </p>{" "}<p className="mt-5 text-gray-600 ">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-                beatae error laborum ab amet sunt recusandae? Reiciendis natus
-                perspiciatis optio. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Labore praesentium deleniti dolor eaque quo
-                impedit dignissimos totam officiis, asperiores est corporis
-                mollitia nihil voluptatibus earum quisquam odit quis!
-                Laudantium, nam. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. <br />
+                Welcome to our gallery, a visual celebration of the milestones,
+                events, and personalities that have shaped our journey in the
+                digital marketing world. Here, you'll find snapshots with
+                industry pioneers, influential figures, and renowned
+                personalities who inspire us to push the boundaries of
+                innovation and excellence.
+                <br />
+              </p>{" "}
+              <p className="mt-5 text-gray-600 ">
+              We've had the privilege of meeting and learning from some of the brightest minds in digital marketing. These images capture moments with industry leaders who have revolutionized the way we approach marketing. <br />
               </p>{" "}
             </div>
           </div>

@@ -24,8 +24,7 @@ const Footer = () => {
           </div>
 
         <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-          consequuntur amet culpa cum itaque neque.
+        At Grothify, we believe in the power of digital marketing to transform businesses and drive meaningful growth
         </p>
 
         <div className="flex flex-wrap justify-center my-4 gap-4 md:flex-row md:mx-6">
