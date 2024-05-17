@@ -12,17 +12,10 @@ const Gallery = () => {
                 Leaders{" "}
               </h1>
               <p className="mt-5 text-gray-600 ">
-                Welcome to our gallery, a visual celebration of the milestones,
-                events, and personalities that have shaped our journey in the
-                digital marketing world. Here, you'll find snapshots with
-                industry pioneers, influential figures, and renowned
-                personalities who inspire us to push the boundaries of
-                innovation and excellence.
+              " Deepam Soni, the trailblazing founder of Grothify, boasting over four years of immersive experience in Digital Marketing and Social Media Marketing. Deepam's journey is defined by collaboration with numerous esteemed companies and brands, crafting bespoke strategies that drive growth and engagement. With a profound understanding of market dynamics and consumer behavior, Deepam has earned a reputation for delivering exceptional results. <br /><br /> At Grothify, his visionary leadership inspires innovation and excellence, making us the preferred partner for businesses seeking to dominate the digital realm. Join us and experience the expertise of Deepam Soni in reshaping the landscape of digital and social media marketing."
                 <br />
               </p>{" "}
-              <p className="mt-5 text-gray-600 ">
-              We've had the privilege of meeting and learning from some of the brightest minds in digital marketing. These images capture moments with industry leaders who have revolutionized the way we approach marketing. <br />
-              </p>{" "}
+              
             </div>
           </div>
           <div className="flex lg:flex-row flex-col items-center h-full justify-center w-full mt-6 lg:mt-0 lg:w-1/2">

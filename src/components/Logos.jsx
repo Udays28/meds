@@ -11,6 +11,11 @@ const logos = [
   "./company/l8.jpg",
   "./company/l9.jpg",
   "./company/l10.jpg",
+  "./company/l11.jpg",
+  "./company/l12.png",
+  "./company/l13.jpg",
+  "./company/l14.png",
+  "./company/l15.png",
 ];
 
 const Logos = () => {
@@ -33,7 +38,7 @@ const Logos = () => {
       >
         {/* Render duplicated logos */}
         {duplicatedLogos.map((logo, index) => (
-          <div key={index} className="flex-shrink-0 lg:m-0 m-2" style={{ width: `${200 / logos.length}%` }}>
+          <div key={index} className="flex-shrink-0 lg:m-0" style={{ width: `${200 / logos.length}%` }}>
             <div className="flex items-center justify-center h-full">
               <img src={logo} alt={`Logo ${index}`} className="max-h-32" />
             </div>

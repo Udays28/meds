@@ -15,6 +15,7 @@ const Companies = () => {
     "./company/l8.jpg",
     "./company/l9.jpg",
     "./company/l10.jpg",
+    "./company/l11.png",
   ]);
 
   return (
