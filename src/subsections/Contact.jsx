@@ -195,7 +195,7 @@ const Contact = () => {
                 </a>
                 <a
                   className="mx-1.5        :hover:text-purple-400 text-gray-400 transition-colors duration-300 transform hover:text-purple-500"
-                  href="#"
+                  href="https://www.instagram.com/grothify_?igsh=MTQxYjBraXcwMnhwcg=="
                 >
                   <svg
                     className="w-8 h-8"
@@ -226,7 +226,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     type="text"
-                    placeholder="John Doe"
+                    placeholder="Enter your name here"
                     className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md        :placeholder-gray-600        :bg-gray-900        :text-gray-300        :border-gray-700 focus:border-purple-400        :focus:border-purple-400 focus:ring-purple-400 focus:outline-none focus:ring focus:ring-opacity-40"
                   />
                 </div>
@@ -238,7 +238,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     type="email"
-                    placeholder="johndoe@example.com"
+                    placeholder="Enter your email here"
                     className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md        :placeholder-gray-600        :bg-gray-900        :text-gray-300        :border-gray-700 focus:border-purple-400        :focus:border-purple-400 focus:ring-purple-400 focus:outline-none focus:ring focus:ring-opacity-40"
                   />
                 </div>
