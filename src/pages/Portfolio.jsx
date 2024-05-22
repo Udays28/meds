@@ -80,13 +80,14 @@ const Portfolio = () => {
 
   return (
     <div className="w-full h-full p-4 mt-12 select-none">
-      {/* <section className="px-4 py-24 mx-auto max-w-7xl">
-        <div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
-          <h1 className="mb-6 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
-            <span className="block w-full text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-purple-500 lg:inline">Our Portfolio</span>
-          </h1>
-        </div>
-      </section> */}
+      <div className="md:w-2/3 lg:w-1/2 mt-12 text-black">
+        <h2 className="my-8 text-2xl font-bold text-black md:text-4xl">
+          Showcasing Our Success: <span className="text-purple-600">Explore Our Portfolio</span>
+        </h2>
+        <p className="text-black">
+          Dive into our portfolio to witness the transformative power of our digital marketing solutions. Each project reflects our dedication to driving growth and achieving results for our clients.
+        </p>
+      </div>
 
       <section>
         <div className="max-w-6xl mx-auto duration-1000 delay-300 opacity-0 select-none ease animate-fade-in-view" style={{ translate: 'none', rotate: 'none', scale: 'none', opacity: 1, transform: 'translate(0px, 0px)' }}>
