@@ -80,7 +80,7 @@ const Portfolio = () => {
 
   return (
     <div className="w-full h-full p-4 mt-12 select-none">
-      <div className="md:w-2/3 lg:w-1/2 mt-12 text-black">
+      <div className=" lg:px-44 mt-12 text-black">
         <h2 className="my-8 text-2xl font-bold text-black md:text-4xl">
           Showcasing Our Success: <span className="text-purple-600">Explore Our Portfolio</span>
         </h2>
