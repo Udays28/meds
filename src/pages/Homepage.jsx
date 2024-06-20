@@ -54,10 +54,10 @@ const Homepage = () => {
                 </div>
               </button>
             </Link>
-            <p className="mt-12">
+            {/* <p className="mt-12">
               Our Performance Marketing Services are Certified by
-            </p>
-   <div className="max-w-3xl mx-auto px-5">
+            </p> */}
+   {/* <div className="max-w-3xl mx-auto px-5">
   <div className="flex flex-col justify-center">
   
     <div className="flex flex-wrap items-center justify-center gap-10 mt-2 md:justify-around">
@@ -117,7 +117,7 @@ const Homepage = () => {
       </div>
     </div>
   </div>
-</div>
+</div> */}
 
           </div>
         </div>
