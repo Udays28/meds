@@ -150,6 +150,8 @@ const Services = () => {
       price: "Prices Depend on the Requirement",
       description: "Automating cold outreach campaigns to potential clients.",
     },
+    
+    
   ]);
   
   return (

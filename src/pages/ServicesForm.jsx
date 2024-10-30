@@ -32,6 +32,15 @@ const ServiceForm = () => {
     "Automated Calls",
     "Follow-ups Automation",
     "Cold Outreach Automations",
+    "WordPress",
+    "Wix",
+    "Shopify",
+    "Drop Shipping",
+    "Affiliate Marketing",
+    "Product Management",
+    "Product Marketing",
+    "Branding",
+    "Content Marketing",
   ];
 
   const [selectedServices, setSelectedServices] = useState([]);

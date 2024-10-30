@@ -12,7 +12,7 @@ const Gallery = () => {
                 Leaders{" "}
               </h1>
               <p className="mt-5 text-gray-600 ">
-              " Deepam Soni, the trailblazing founder of Grothify, boasting over four years of immersive experience in Digital Marketing and Social Media Marketing. Deepam's journey is defined by collaboration with numerous esteemed companies and brands, crafting bespoke strategies that drive growth and engagement. With a profound understanding of market dynamics and consumer behavior, Deepam has earned a reputation for delivering exceptional results. <br /><br /> At Grothify, his visionary leadership inspires innovation and excellence, making us the preferred partner for businesses seeking to dominate the digital realm. Join us and experience the expertise of Deepam Soni in reshaping the landscape of digital and social media marketing."
+              " Rohit Sharma, the trailblazing founder of MediaBizz, boasting over four years of immersive experience in Digital Marketing and Social Media Marketing. Rohit's journey is defined by collaboration with numerous esteemed companies and brands, crafting bespoke strategies that drive growth and engagement. With a profound understanding of market dynamics and consumer behavior, Rohit has earned a reputation for delivering exceptional results. <br /><br /> At MediaBizz, his visionary leadership inspires innovation and excellence, making us the preferred partner for businesses seeking to dominate the digital realm. Join us and experience the expertise of Rohit Sharma in reshaping the landscape of digital and social media marketing."
                 <br />
               </p>{" "}
               

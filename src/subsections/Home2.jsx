@@ -18,7 +18,7 @@ const Home2 = () => {
             </h1>
 
             <p className="max-w-lg mt-6 text-gray-500    :text-gray-400 ">
-              At Grothify, we believe in the power of digital marketing to
+              At MediaBizz, we believe in the power of digital marketing to
               transform businesses and drive meaningful growth. Our mission is
               simple: to partner with you on your journey to digital success,
               leveraging cutting-edge strategies and unparalleled expertise to

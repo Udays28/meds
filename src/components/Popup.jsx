@@ -28,7 +28,7 @@ const Popup = () => {
               🚀 Stay Updated!
             </h2>
             <p className="mt-4 text-sm text-gray-600 :text-gray-300">
-              Receive Valuable Marketing Insights from Deepam Soni through push
+              Receive Valuable Marketing Insights from Rohit Sharma through push
               notification
             </p>
             <div className="flex items-center justify-between mt-4 gap-x-4 shrink-0">

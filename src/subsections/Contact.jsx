@@ -93,7 +93,7 @@ const Contact = () => {
                   />
                 </svg>
                 <span className="mx-2 text-gray-700 truncate w-72        :text-gray-400">
-                  Janakpuri west, Blue line, New Delhi.{" "}
+                janjeerwala square, Indore,MP {" "}
                 </span>
               </p>
               <p className="flex items-start -mx-2">
@@ -112,7 +112,7 @@ const Contact = () => {
                   />
                 </svg>
                 <span className="mx-2 text-gray-700 truncate w-72        :text-gray-400">
-                  9893921411{" "}
+                6261173541{" "}
                 </span>
               </p>
               <p className="flex items-start -mx-2">
@@ -131,7 +131,7 @@ const Contact = () => {
                   />
                 </svg>
                 <span className="mx-2 text-gray-700 truncate w-72        :text-gray-400">
-                  acb@example.com
+                  contact@mediabizz.in
                 </span>
               </p>
             </div>
@@ -195,7 +195,7 @@ const Contact = () => {
                 </a>
                 <a
                   className="mx-1.5        :hover:text-purple-400 text-gray-400 transition-colors duration-300 transform hover:text-purple-500"
-                  href="https://www.instagram.com/grothify_?igsh=MTQxYjBraXcwMnhwcg=="
+                  href="https://www.instagram.com/MediaBizz_?igsh=MTQxYjBraXcwMnhwcg=="
                 >
                   <svg
                     className="w-8 h-8"

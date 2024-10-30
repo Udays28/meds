@@ -24,7 +24,7 @@ const Companies = () => {
         <div className="max-w-lg mx-auto">
           <h1 className="text-3xl font-semibold text-gray-800 lg:text-4xl">
             Create Your Digital Presence With{" "}
-            <span className="text-purple-500">Grothify</span>
+            <span className="text-purple-500">MediaBizz</span>
           </h1>
           <p className="mt-6 text-gray-700">
             Grateful for the opportunity to work with incredible clients. Thank

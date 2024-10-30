@@ -23,7 +23,7 @@ const Reviews = () => {
     {
       name: "Chetan jain",
       review:
-        "Good services provided by deepam, excelent website designed, getting complete support",
+        "Good services provided by Rohit, excelent website designed, getting complete support",
       time: "2023/06/27",
       company: "Www.Bharosabank.com",
       project: "Www.bharosabank.com",

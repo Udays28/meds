@@ -20,11 +20,11 @@ const Footer = () => {
       <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
       <div className="flex items-center gap-3 justify-center">
             <img className="h-9 w-9" src="./logo.png" alt="" />
-            <h1 className=" text-3xl font-semibold text-black">Grothify</h1>
+            <h1 className=" text-3xl font-semibold text-black">MediaBizz</h1>
           </div>
 
         <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
-        At Grothify, we believe in the power of digital marketing to transform businesses and drive meaningful growth
+        At MediaBizz, we believe in the power of digital marketing to transform businesses and drive meaningful growth
         </p>
 
         <div className="flex flex-wrap justify-center my-4 gap-4 md:flex-row md:mx-6">
@@ -122,7 +122,7 @@ const Footer = () => {
 
           <li>
             <a
-              href="https://www.instagram.com/grothify_?igsh=MTQxYjBraXcwMnhwcg=="
+              href="https://www.instagram.com/MediaBizz_?igsh=MTQxYjBraXcwMnhwcg=="
               rel="noreferrer"
               target="_blank"
               className="text-gray-700 transition hover:text-purple-700/75 hover:underline"

@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="flex items-center  justify-between">
           <div className="flex items-center gap-3 justify-between">
             <img className="h-9 w-9" src="./logo.png" alt="" />
-            <h1 className=" text-3xl font-semibold text-black">Grothify</h1>
+            <h1 className=" text-3xl font-semibold text-black">MediaBizz</h1>
           </div>
           {/* Mobile menu button */}
           <div className="flex md:hidden lg:hidden">

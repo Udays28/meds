@@ -10,12 +10,12 @@ const AboutPage = () => {
                 <h1 className="text-3xl font-semibold text-gray-800  lg:text-4xl">
                   About The Owner <br />
                   <span className="text-purple-500 font-semibold ">
-                    Deepam Soni
+                    Rohit Sharma
                   </span>
                 </h1>
-                {/* <p>At Grothify, we believe in the power of digital marketing to transform businesses and drive meaningful growth. Our mission is simple: to partner with you on your journey to digital success, leveraging cutting-edge strategies and unparalleled expertise to unlock your brand's full potential.</p> */}
+                {/* <p>At MediaBizz, we believe in the power of digital marketing to transform businesses and drive meaningful growth. Our mission is simple: to partner with you on your journey to digital success, leveraging cutting-edge strategies and unparalleled expertise to unlock your brand's full potential.</p> */}
                 <p className="mt-5 text-gray-600 ">
-                Welcome to Grothify, where digital marketing excellence meets innovation. I'm Deepam Soni, an experienced digital marketer with over 4 years of expertise in crafting compelling strategies that drive results.<br /> Since igniting my career journey in 2020, I've had the privilege of collaborating with numerous brands across the globe. From startups to established enterprises, I've helped businesses of all sizes establish a formidable market presence and achieve unparalleled success. <br /><br />Join me on this exciting journey as we navigate the ever-evolving digital landscape together, turning challenges into opportunities and dreams into reality. Let's embark on a transformative digital journey that propels your business to new heights of success!
+                Welcome to MediaBizz, where digital marketing excellence meets innovation. I'm Rohit Sharma, an experienced digital marketer with over 4 years of expertise in crafting compelling strategies that drive results.<br /> Since igniting my career journey in 2020, I've had the privilege of collaborating with numerous brands across the globe. From startups to established enterprises, I've helped businesses of all sizes establish a formidable market presence and achieve unparalleled success. <br /><br />Join me on this exciting journey as we navigate the ever-evolving digital landscape together, turning challenges into opportunities and dreams into reality. Let's embark on a transformative digital journey that propels your business to new heights of success!
                 </p>{" "}
               </div>
             </div>
@@ -32,7 +32,7 @@ const AboutPage = () => {
 
       <div className="  flex flex-col justify-between h-full p-4 lg:px-24 mt-5">
         <h2 className="mb-1 pt-12 text-3xl font-semibold leading-tight text-gray-900">
-          About Grothify
+          About MediaBizz
         </h2>
         <p className="mb-12 text-lg text-gray-500">
           Here is a few of the awesome Services we provide.
@@ -45,14 +45,14 @@ const AboutPage = () => {
                 <div className="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg">
                   <div className="flex items-center -mt-1">
                     <h3 className="my-2 ml-3 text-lg font-bold text-gray-800">
-                      About Grothify
+                      About MediaBizz
                     </h3>
                   </div>
 
                   <p className="mb-2 text-gray-600">
-                    Welcome to Grothify, your premier destination for
-                    cutting-edge digital marketing solutions. Founded by Deepam
-                    Soni, a visionary entrepreneur with a passion for digital
+                    Welcome to MediaBizz, your premier destination for
+                    cutting-edge digital marketing solutions. Founded by Rohit
+                    Sharma, a visionary entrepreneur with a passion for digital
                     innovation, our agency specializes in delivering top-tier
                     digital marketing, social media marketing, and automation
                     services to propel your business to new heights.
@@ -71,7 +71,7 @@ const AboutPage = () => {
                   </div>
 
                   <p className="mb-2 text-gray-600">
-                    At Grothify, we understand that every business is unique.
+                    At MediaBizz, we understand that every business is unique.
                     That's why we offer a comprehensive suite of services,
                     including digital marketing, social media marketing, and
                     automation, designed to meet your specific needs and
@@ -95,7 +95,7 @@ const AboutPage = () => {
                   </div>
 
                   <p className="mb-2 text-gray-600">
-                    Over the years, Grothify has had the privilege of partnering
+                    Over the years,MediaBizz has had the privilege of partnering
                     with a diverse range of companies across various industries.
                     Our track record of success and long-term relationships with
                     our clients are a testament to our unwavering commitment to
@@ -115,7 +115,7 @@ const AboutPage = () => {
                   </div>
 
                   <p className="mb-2 text-gray-600">
-                    At Grothify, we understand that every business is unique.
+                    At MediaBizz, we understand that every business is unique.
                     That's why we offer a comprehensive suite of services,
                     including digital marketing, social media marketing, and
                     automation, designed to meet your specific needs and
@@ -138,7 +138,7 @@ const AboutPage = () => {
 
                   <p className="mb-2 text-gray-600">
                     Ready to take your digital presence to the next level?
-                    Contact Grothify today to learn how we can help you achieve
+                    Contact GMediaBizz today to learn how we can help you achieve
                     your goals and unlock your business's full potential. Let's
                     embark on a journey of growth and success together!
                   </p>

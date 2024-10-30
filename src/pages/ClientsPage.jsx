@@ -52,7 +52,7 @@ const ClientsPage = () => {
             Our <span className="text-purple-500">Clients</span>
           </h1>
           <p className="max-w-2xl mx-auto my-6 text-center text-gray-500            :text-gray-300">
-          At Grothify, we value strong client relationships. We work with diverse small businesses, tailoring our services to their unique needs. Their success is our top priority.
+          At MediaBizz, we value strong client relationships. We work with diverse small businesses, tailoring our services to their unique needs. Their success is our top priority.
           </p>
           <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
             {client.map((clients, index) => (

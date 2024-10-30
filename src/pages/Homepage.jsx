@@ -37,7 +37,7 @@ const Homepage = () => {
             </p>
             <Link className="flex justify-center items-center my-4" to="/about">
               <button className="cssbuttons-io-button">
-                About Grothify
+                About MediaBizz
                 <div className="icon">
                   <svg
                     height={24}
