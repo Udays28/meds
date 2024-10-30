@@ -122,7 +122,7 @@ const Footer = () => {
 
           <li>
             <a
-              href="https://www.instagram.com/MediaBizz_?igsh=MTQxYjBraXcwMnhwcg=="
+              href="https://www.instagram.com/mediabizz_/profilecard/?igsh=d3Y0aGxsNDRsa2sw"
               rel="noreferrer"
               target="_blank"
               className="text-gray-700 transition hover:text-purple-700/75 hover:underline"

@@ -1,91 +1,128 @@
-/* eslint-disable no-unused-vars */
-import { useState } from "react";
+// /* eslint-disable react/no-unescaped-entities */
 
-const ClientsPage = () => {
-  const [client, setClient] = useState([
-    {
-      name: "Aryan Tyagi",
-      tagline:
-        "Askin Astrogy worked his astrological wonders with Adymize's enchanting services",
-      bussiness: "Network Marketing",
-      image:
-        "https://images.unsplash.com/photo-1542190891-2093d38760f2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores earum minima sapiente, dolores aperiam inventore architecto? Ut, suscipit? Accusamus facere eaque consequatur officiis ratione mollitia quis, eveniet praesentium itaque assumenda.",
-    },
-    {
-      name: "Aryan Tyagi",
-      tagline:
-        "Askin Astrogy worked his astrological wonders with Adymize's enchanting services",
-      bussiness: "Network Marketing",
-      image:
-        "https://images.unsplash.com/photo-1542190891-2093d38760f2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores earum minima sapiente, dolores aperiam inventore architecto? Ut, suscipit? Accusamus facere eaque consequatur officiis ratione mollitia quis, eveniet praesentium itaque assumenda.",
-    },
-    {
-      name: "Aryan Tyagi",
-      tagline:
-        "Askin Astrogy worked his astrological wonders with Adymize's enchanting services",
-      bussiness: "Network Marketing",
-      image:
-        "https://images.unsplash.com/photo-1542190891-2093d38760f2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores earum minima sapiente, dolores aperiam inventore architecto? Ut, suscipit? Accusamus facere eaque consequatur officiis ratione mollitia quis, eveniet praesentium itaque assumenda.",
-    },
-    {
-      name: "Aryan Tyagi",
-      tagline:
-        "Askin Astrogy worked his astrological wonders with Adymize's enchanting services",
-      bussiness: "Network Marketing",
-      image:
-        "https://images.unsplash.com/photo-1542190891-2093d38760f2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores earum minima sapiente, dolores aperiam inventore architecto? Ut, suscipit? Accusamus facere eaque consequatur officiis ratione mollitia quis, eveniet praesentium itaque assumenda.",
-    },
-  ]);
+const Blog = () => {
   return (
-    <>
-      <section className="bg-white  mt-12  lg:px-24   :bg-gray-900">
-        <div className="container px-6 py-10 mx-auto">
-          <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl            :text-white">
-            Our <span className="text-purple-500">Clients</span>
-          </h1>
-          <p className="max-w-2xl mx-auto my-6 text-center text-gray-500            :text-gray-300">
-          At MediaBizz, we value strong client relationships. We work with diverse small businesses, tailoring our services to their unique needs. Their success is our top priority.
-          </p>
-          <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
-            {client.map((clients, index) => (
-              <div
-                key={index}
-                className="lg:px-12 lg:py-8 p-4 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-purple-600     hover:text-white       :border-gray-700            :hover:border-transparent"
-              >
-                <div className="flex flex-col sm:-mx-4 sm:flex-row">
-                  <img
-                    className="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300"
-                    src={clients.image}
-                    alt=""
-                  />
-                  <div className="mt-4 sm:mx-4 sm:mt-0">
-                    <h1 className="text-xl font-semibold text-gray-700 capitalize md:text-2xl            :text-white group-hover:text-white">
-                      {clients.name}{" "}
-                    </h1>
-                    <p className="mt-2 text-gray-500 capitalize            :text-gray-300 group-hover:text-gray-300">
-                      {clients.bussiness}
-                    </p>
-                  </div>
-                </div>
-               <h1 className="font-semibold my-4">{clients.tagline}</h1>
-                <p className="mt-4 text-gray-500 capitalize text-sm           :text-gray-300 group-hover:text-gray-300">
-                 {clients.description}
-                </p>
+<div className="flex h-screen flex-col justify-center p-4 items-center">
+  {/* <div className="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
+    <div role="main" className="flex flex-col items-center justify-center">
+      <h1 className="text-4xl font-semibold leading-9 text-center text-gray-800 ">This Week Blogs</h1>
+      <p className="text-base leading-normal text-center text-gray-600  mt-4 lg:w-1/2 md:w-10/12 w-11/12">If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough</p>
+    </div>
+    <div className="lg:flex items-stretch md:mt-12 mt-8">
+      <div className="lg:w-1/2">
+        <div className="sm:flex items-center justify-between xl:gap-x-8 gap-x-6">
+          <div className="sm:w-1/2 relative">
+            <div>
+              <p className="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+              <div className="absolute bottom-0 left-0 p-6">
+                <h2 className="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+                <p className="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                <a href="#" className="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                  <p className="pr-2 text-sm font-medium leading-none">Read More</p>
+                  <svg className="fill-stroke" width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </a>
               </div>
-            ))}
+            </div>
+            <img src="https://i.ibb.co/DYxtCJq/img-1.png" className="w-full" alt="chair" />
+          </div>
+          <div className="sm:w-1/2 sm:mt-0 mt-4 relative">
+            <div>
+              <p className="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+              <div className="absolute bottom-0 left-0 p-6">
+                <h2 className="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+                <p className="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                <a href="#" className="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                  <p className="pr-2 text-sm font-medium leading-none">Read More</p>
+                  <svg className="fill-stroke" width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img src="https://i.ibb.co/3C5HvxC/img-2.png" className="w-full" alt="wall design" />
           </div>
         </div>
-      </section>
-    </>
-  );
-};
+        <div className="relative">
+          <div>
+            <p className="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+            <div className="absolute bottom-0 left-0 md:p-10 p-6">
+              <h2 className="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+              <p className="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+              <a href="#" className="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                <p className="pr-2 text-sm font-medium leading-none">Read More</p>
+                <svg className="fill-stroke" width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <img src="https://i.ibb.co/Ms4qyXp/img-3.png" alt="sitting place" className="w-full mt-8 md:mt-6 hidden sm:block" />
+          <img className="w-full mt-4 sm:hidden" src="https://i.ibb.co/6XYbN7f/Rectangle-29.png" alt="sitting place" />
+        </div>
+      </div>
+      <div className="lg:w-1/2 xl:ml-8 lg:ml-4 lg:mt-0 md:mt-6 mt-4 lg:flex flex-col justify-between">
+        <div className="relative">
+          <div>
+            <p className="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+            <div className="absolute bottom-0 left-0 md:p-10 p-6">
+              <h2 className="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+              <p className="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+              <a href="#" className="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                <p className="pr-2 text-sm font-medium leading-none">Read More</p>
+                <svg className="fill-stroke" width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <img src="https://i.ibb.co/6Wfjf2w/img-4.png" alt="sitting place" className="w-full sm:block hidden" />
+          <img className="w-full sm:hidden" src="https://i.ibb.co/dpXStJk/Rectangle-29.png" alt="sitting place" />
+        </div>
+        <div className="sm:flex items-center justify-between xl:gap-x-8 gap-x-6 md:mt-6 mt-4">
+          <div className="relative w-full">
+            <div>
+              <p className="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+              <div className="absolute bottom-0 left-0 p-6">
+                <h2 className="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+                <p className="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                <a href="#" className="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                  <p className="pr-2 text-sm font-medium leading-none">Read More</p>
+                  <svg className="fill-stroke" width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img src="https://i.ibb.co/3yvZBpm/img-5.png" className="w-full" alt="chair" />
+          </div>
+          <div className="relative w-full sm:mt-0 mt-4">
+            <div>
+              <p className="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+              <div className="absolute bottom-0 left-0 p-6">
+                <h2 className="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
+                <p className="text-base leading-4 text-white mt-2">Dive into minimalism</p>
+                <a href="#" className="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                  <p className="pr-2 text-sm font-medium leading-none">Read More</p>
+                  <svg className="fill-stroke" width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <img src="https://i.ibb.co/gDdnJb5/img-6.png" className="w-full" alt="wall design" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> */}
+  <h1 className="lg:text-6xl text-4xl my-4 text-black font-semibold text-center"> <span className="text-purple-600">Stay Tuned </span><br />for Insights and Updates</h1>
+  
+  <p className="lg:px-80 my-6 text-center">We’re excited to announce that our client section is coming soon! Here, you'll find a wealth of knowledge, insights, and updates on all things digital marketing..</p>
+</div>
 
-export default ClientsPage;
+  )
+}
+
+export default Blog
